@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { breakdown } from '../lib/plates';
+import { t } from '../lib/i18n';
 import PlateChips from './PlateChips';
 
 export default function PlateCalc({ bar, plates }) {
@@ -9,15 +10,15 @@ export default function PlateCalc({ bar, plates }) {
 
   return (
     <div>
-      <label className="field">Peso objetivo (kg)
+      <label className="field">{t('plate.target')}
         <input type="number" inputMode="decimal" value={weight} onChange={(e) => setWeight(e.target.value)} />
       </label>
       {result && (
         <div className="metric" style={{ textAlign: 'center' }}>
-          <div style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 10 }}>Por lado</div>
+          <div style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 10 }}>{t('plate.perSide')}</div>
           <div style={{ marginBottom: 10 }}><PlateChips perSide={result.perSide} plates={plates} /></div>
           <div style={{ fontSize: 14, fontWeight: 600 }}>
-            {result.exact ? `Total ${result.loaded} kg · exacto` : `≈ ${result.loaded} kg (lo cargable más cercano)`}
+            {result.exact ? t('plate.exact', { kg: result.loaded }) : t('plate.closest', { kg: result.loaded })}
           </div>
         </div>
       )}

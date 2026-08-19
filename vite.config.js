@@ -3,14 +3,16 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  // Root by default; the GitHub Pages workflow sets BASE_PATH=/liftlog-pwa/.
+  base: process.env.BASE_PATH || '/',
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'CrossFit Tracker',
-        short_name: 'CFTracker',
-        start_url: '/',
+        name: 'LiftLog',
+        short_name: 'LiftLog',
+        description: 'Local-first workout log: lifts, 1RM, percentages and plate math.',
         display: 'standalone',
         background_color: '#0f1113',
         theme_color: '#2f7ad6',

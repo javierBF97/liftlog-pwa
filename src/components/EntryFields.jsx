@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { TYPE_FIELDS, parseEntry } from '../lib/entryForm';
+import { t } from '../lib/i18n';
 import TimeSelect from './TimeSelect';
 
 const today = () => new Date().toISOString().slice(0, 10);
@@ -25,10 +26,10 @@ export default function EntryFields({ type, initial, onChange }) {
           if (f.showIf && !f.showIf(raw)) return null;
           if (f.kind === 'modality') {
             return (
-              <label key={f.key} className="field" style={{ flex: 1, minWidth: 120 }}>{f.label}
+              <label key={f.key} className="field" style={{ flex: 1, minWidth: 120 }}>{t(f.label)}
                 <select value={raw.modality ?? 'unbroken'} onChange={(e) => set('modality', e.target.value)}>
-                  <option value="unbroken">Unbroken</option>
-                  <option value="accumulated">Acumuladas</option>
+                  <option value="unbroken">{t('modality.unbroken')}</option>
+                  <option value="accumulated">{t('modality.accumulated')}</option>
                 </select>
               </label>
             );
@@ -36,13 +37,13 @@ export default function EntryFields({ type, initial, onChange }) {
           if (f.kind === 'time') {
             return (
               <div key={f.key} className="field" style={{ flex: 1, minWidth: 160 }}>
-                <span>{f.label}</span>
+                <span>{t(f.label)}</span>
                 <TimeSelect value={raw[f.key] ?? ''} onChange={(v) => set(f.key, v)} />
               </div>
             );
           }
           return (
-            <label key={f.key} className="field" style={{ flex: 1, minWidth: 90 }}>{f.label}
+            <label key={f.key} className="field" style={{ flex: 1, minWidth: 90 }}>{t(f.label)}
               <input
                 type={f.kind === 'time' ? 'text' : 'number'}
                 inputMode={f.kind === 'int' ? 'numeric' : 'decimal'}
@@ -54,7 +55,7 @@ export default function EntryFields({ type, initial, onChange }) {
           );
         })}
       </div>
-      <label className="field">Fecha
+      <label className="field">{t('field.date')}
         <input type="date" value={raw.date} onChange={(e) => set('date', e.target.value)} />
       </label>
     </>

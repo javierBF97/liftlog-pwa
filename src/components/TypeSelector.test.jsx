@@ -7,7 +7,7 @@ describe('TypeSelector', () => {
   it('renders the four types and reports selection', async () => {
     const onChange = vi.fn();
     render(<TypeSelector value="strength" onChange={onChange} />);
-    expect(screen.getByRole('button', { name: /fuerza/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /strength/i })).toBeInTheDocument();
     await userEvent.click(screen.getByRole('button', { name: /carry/i }));
     expect(onChange).toHaveBeenCalledWith('carry');
   });

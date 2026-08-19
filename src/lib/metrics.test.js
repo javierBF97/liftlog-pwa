@@ -46,7 +46,7 @@ describe('pillText', () => {
       { id: '1', date: '2026-06-01', weight: 80, distance: 20 },
       { id: '2', date: '2026-06-10', weight: 100, distance: 15 },
     ] };
-    expect(pillText(ex)).toBe('máx 100 kg');
+    expect(pillText(ex)).toBe('max 100 kg');
   });
   it('gymnastics: max unbroken reps', () => {
     const ex = { type: 'gymnastics', entries: [
@@ -60,7 +60,7 @@ describe('pillText', () => {
       { id: '1', date: '2026-06-01', distance: 1000, time: 300 },
       { id: '2', date: '2026-06-10', distance: 1000, time: 270 },
     ] };
-    expect(pillText(ex)).toBe('mejor 4:30 /km');
+    expect(pillText(ex)).toBe('best 4:30 /km');
   });
   it('returns null when there are no entries', () => {
     expect(pillText({ type: 'strength', entries: [] })).toBeNull();
@@ -68,14 +68,14 @@ describe('pillText', () => {
 });
 
 describe('metricGrande', () => {
-  it('strength → 1RM estimado del último', () => {
+  it('strength → estimated 1RM of the latest entry', () => {
     expect(metricGrande({ type: 'strength', entries: [{ date: '2026-06-10', weight: 100, reps: 5 }] }))
-      .toEqual({ label: '1RM estimado', value: '117 kg' });
+      .toEqual({ label: 'Estimated 1RM', value: '117 kg' });
   });
-  it('carry → peso máximo', () => {
+  it('carry → max weight', () => {
     expect(metricGrande({ type: 'carry', entries: [
       { date: '2026-06-01', weight: 80, distance: 20 }, { date: '2026-06-02', weight: 100, distance: 10 },
-    ] })).toEqual({ label: 'Peso máximo', value: '100 kg' });
+    ] })).toEqual({ label: 'Max weight', value: '100 kg' });
   });
   it('returns null without entries', () => {
     expect(metricGrande({ type: 'carry', entries: [] })).toBeNull();
@@ -83,7 +83,7 @@ describe('metricGrande', () => {
 });
 
 describe('chartMetrics / chartSeries', () => {
-  it('carry has Peso and Volumen options', () => {
+  it('carry has Weight and Volume options', () => {
     expect(chartMetrics('carry').map((m) => m.key)).toEqual(['weight', 'volume']);
   });
   it('strength has a single e1rm series', () => {
@@ -110,16 +110,16 @@ describe('chartMetrics / chartSeries', () => {
 
 describe('history columns', () => {
   it('headers per type', () => {
-    expect(historyHeaders('carry')).toEqual(['Fecha', 'Peso', 'Distancia']);
-    expect(historyHeaders('gymnastics')).toEqual(['Fecha', 'Reps', 'Modalidad', 'Tiempo']);
-    expect(historyHeaders('cardio')).toEqual(['Fecha', 'Distancia', 'Calorías', 'Tiempo']);
-    expect(historyHeaders('strength')).toEqual(['Fecha', 'Peso', 'Reps']);
+    expect(historyHeaders('carry')).toEqual(['Date', 'Weight', 'Distance']);
+    expect(historyHeaders('gymnastics')).toEqual(['Date', 'Reps', 'Modality', 'Time']);
+    expect(historyHeaders('cardio')).toEqual(['Date', 'Distance', 'Calories', 'Time']);
+    expect(historyHeaders('strength')).toEqual(['Date', 'Weight', 'Reps']);
   });
   it('cells per type', () => {
     expect(historyCells('carry', { date: '2026-06-01', weight: 100, distance: 20 }))
       .toEqual(['2026-06-01', '100 kg', '20 m']);
     expect(historyCells('gymnastics', { date: '2026-06-01', reps: 50, modality: 'accumulated', time: 180 }))
-      .toEqual(['2026-06-01', '50', 'Acum.', '3:00']);
+      .toEqual(['2026-06-01', '50', 'Accum.', '3:00']);
     expect(historyCells('cardio', { date: '2026-06-01', calories: 120, time: 600 }))
       .toEqual(['2026-06-01', '—', '120 cal', '10:00']);
   });

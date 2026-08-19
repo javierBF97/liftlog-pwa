@@ -1,5 +1,6 @@
 import { buildRmTable } from '../lib/oneRm';
 import { breakdown } from '../lib/plates';
+import { t } from '../lib/i18n';
 import PlateChips from './PlateChips';
 
 export default function RmTable({ oneRm, max = 16, showPlates = false, bar = 20, plates = [] }) {
@@ -7,7 +8,7 @@ export default function RmTable({ oneRm, max = 16, showPlates = false, bar = 20,
   return (
     <table>
       <thead>
-        <tr><th>RM</th><th>Peso (kg)</th>{showPlates && <th>Discos /lado</th>}</tr>
+        <tr><th>RM</th><th>{t('table.weight')}</th>{showPlates && <th>{t('table.platesSide')}</th>}</tr>
       </thead>
       <tbody>
         {rows.map((r) => {

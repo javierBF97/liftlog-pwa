@@ -1,7 +1,7 @@
 import { DEFAULT_PLATES } from './plates';
 
-export const STORAGE_KEY = 'crossfit-tracker-v1';
-export const BAR_KEY = 'cf-bar-kg';
+export const STORAGE_KEY = 'liftlog-v1';
+export const BAR_KEY = 'liftlog-bar-kg';
 
 function uuid() {
   return crypto.randomUUID();

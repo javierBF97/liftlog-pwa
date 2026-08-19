@@ -1,5 +1,6 @@
 import { buildPercentTable } from '../lib/oneRm';
 import { breakdown } from '../lib/plates';
+import { t } from '../lib/i18n';
 import PlateChips from './PlateChips';
 
 export default function PercentTable({ oneRm, showPlates = false, bar = 20, plates = [] }) {
@@ -7,7 +8,7 @@ export default function PercentTable({ oneRm, showPlates = false, bar = 20, plat
   return (
     <table>
       <thead>
-        <tr><th>%</th><th>Peso (kg)</th>{showPlates && <th>Discos /lado</th>}</tr>
+        <tr><th>%</th><th>{t('table.weight')}</th>{showPlates && <th>{t('table.platesSide')}</th>}</tr>
       </thead>
       <tbody>
         {rows.map((r) => {

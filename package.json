@@ -1,6 +1,6 @@
 {
-  "name": "crossfit-tracker",
-  "description": "PWA local-first para registrar marcas de CrossFit y calcular cargas (1RM, porcentajes, discos)",
+  "name": "liftlog-pwa",
+  "description": "Local-first PWA to log CrossFit lifts and compute loads (1RM, percentages, plates)",
   "license": "MIT",
   "private": true,
   "version": "1.0.0",

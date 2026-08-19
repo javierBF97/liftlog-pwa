@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import PlateChips from './PlateChips';
+import { t } from '../lib/i18n';
 import { IconEdit } from './icons';
 
 // Standard competition plate colors + a few extras for fractional/change plates.
@@ -59,7 +60,7 @@ function ColorPicker({ value, onChange }) {
     <div ref={ref} style={{ position: 'relative' }}>
       <button
         type="button"
-        aria-label="Color del disco"
+        aria-label={t('plates.color')}
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
         style={{
@@ -71,7 +72,7 @@ function ColorPicker({ value, onChange }) {
       {open && (
         <div
           role="listbox"
-          aria-label="Colores"
+          aria-label={t('plates.colors')}
           style={{
             position: 'absolute', zIndex: 20, top: 44, left: 0,
             display: 'flex', flexDirection: 'column', gap: 12,
@@ -130,7 +131,7 @@ export default function PlatesManager({ plates, onAdd, onRemove, onUpdate = () =
 
   return (
     <div className="metric" style={{ marginTop: 12 }}>
-      <div style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 10 }}>Discos disponibles</div>
+      <div style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 10 }}>{t('plates.available')}</div>
       <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 12px' }}>
         {[...plates].sort((a, b) => b.weight - a.weight).map((p) => (
           editId === p.id ? (
@@ -138,25 +139,25 @@ export default function PlatesManager({ plates, onAdd, onRemove, onUpdate = () =
               <form onSubmit={saveEdit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                 <div style={{ display: 'flex', gap: 12, alignItems: 'flex-end', flexWrap: 'wrap' }}>
                   <ColorPicker value={eColor} onChange={setEColor} />
-                  <label className="field" style={{ flex: 1, marginBottom: 0, minWidth: 100 }}>Peso (kg)
+                  <label className="field" style={{ flex: 1, marginBottom: 0, minWidth: 100 }}>{t('field.weight')}
                     <input type="number" inputMode="decimal" value={eWeight} onChange={(e) => setEWeight(e.target.value)} autoFocus />
                   </label>
                   <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--muted)' }}>
-                    <input type="checkbox" checked={eDroppable} onChange={(e) => setEDroppable(e.target.checked)} /> tirable
+                    <input type="checkbox" checked={eDroppable} onChange={(e) => setEDroppable(e.target.checked)} /> {t('plates.droppable')}
                   </label>
                 </div>
                 <div style={{ display: 'flex', gap: 8 }}>
-                  <button className="btn primary" type="submit">Guardar</button>
-                  <button className="btn" type="button" onClick={() => setEditId(null)}>Cancelar</button>
+                  <button className="btn primary" type="submit">{t('btn.save')}</button>
+                  <button className="btn" type="button" onClick={() => setEditId(null)}>{t('btn.cancel')}</button>
                 </div>
               </form>
             </li>
           ) : (
             <li key={p.id} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '6px 0' }}>
               <PlateChips perSide={[p.weight]} plates={plates} />
-              <span style={{ flex: 1 }}>{p.weight} kg {p.droppable ? '' : '· no tirable'}</span>
-              <button className="act edit" aria-label="Editar disco" onClick={() => startEdit(p)}><IconEdit size={14} /></button>
-              <button className="icon-btn" aria-label="Eliminar disco" onClick={() => onRemove(p.id)}>×</button>
+              <span style={{ flex: 1 }}>{p.weight} kg {p.droppable ? '' : t('plates.notDroppable')}</span>
+              <button className="act edit" aria-label={t('plates.edit')} onClick={() => startEdit(p)}><IconEdit size={14} /></button>
+              <button className="icon-btn" aria-label={t('plates.remove')} onClick={() => onRemove(p.id)}>×</button>
             </li>
           )
         ))}
@@ -165,14 +166,14 @@ export default function PlatesManager({ plates, onAdd, onRemove, onUpdate = () =
       <form onSubmit={add} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         <div style={{ display: 'flex', gap: 12, alignItems: 'flex-end', flexWrap: 'wrap' }}>
           <ColorPicker value={color} onChange={setColor} />
-          <label className="field" style={{ flex: 1, marginBottom: 0, minWidth: 100 }}>Peso del disco (kg)
+          <label className="field" style={{ flex: 1, marginBottom: 0, minWidth: 100 }}>{t('plates.plateWeight')}
             <input type="number" inputMode="decimal" value={weight} onChange={(e) => setWeight(e.target.value)} />
           </label>
           <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--muted)' }}>
-            <input type="checkbox" checked={droppable} onChange={(e) => setDroppable(e.target.checked)} /> tirable
+            <input type="checkbox" checked={droppable} onChange={(e) => setDroppable(e.target.checked)} /> {t('plates.droppable')}
           </label>
         </div>
-        <button className="btn primary" type="submit" style={{ alignSelf: 'flex-start' }}>Añadir disco</button>
+        <button className="btn primary" type="submit" style={{ alignSelf: 'flex-start' }}>{t('btn.addPlate')}</button>
       </form>
     </div>
   );

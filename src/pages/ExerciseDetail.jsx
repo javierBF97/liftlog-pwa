@@ -6,6 +6,7 @@ import RmTable from '../components/RmTable';
 import { IconPlus, IconBack, IconCalendar, IconEdit, IconTrash, IconCheck, IconX, IconSettings } from '../components/icons';
 import { metricGrande, chartMetrics, chartSeries, historyHeaders, historyCells } from '../lib/metrics';
 import { emojiFor } from '../lib/types';
+import { t } from '../lib/i18n';
 import EntryFields from '../components/EntryFields';
 
 const OneRmChart = lazy(() => import('../components/OneRmChart'));
@@ -80,7 +81,7 @@ export default function ExerciseDetail({
     <AddEntryForm type={exercise.type} onCancel={() => setAdding(false)} onSave={(entry) => { onAddEntry(entry); setAdding(false); }} />
   ) : (
     <button className="btn primary" style={{ width: '100%', justifyContent: 'center', marginBottom: 12 }} onClick={() => setAdding(true)}>
-      <IconPlus size={16} />Añadir registro
+      <IconPlus size={16} />{t('btn.addRecord')}
     </button>
   );
 
@@ -88,37 +89,37 @@ export default function ExerciseDetail({
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <button className="btn icon-btn" aria-label="Volver" onClick={onBack}><IconBack size={18} /></button>
+          <button className="btn icon-btn" aria-label={t('detail.back')} onClick={onBack}><IconBack size={18} /></button>
           <h1 style={{ margin: 0 }}><span style={{ marginRight: 8 }}>{emojiFor(exercise.type)}</span>{exercise.name}</h1>
         </div>
-        <button className={menuOpen ? 'icon-btn accent' : 'icon-btn'} aria-label="Ajustes" onClick={() => setMenuOpen((v) => !v)}><IconSettings size={18} /></button>
+        <button className={menuOpen ? 'icon-btn accent' : 'icon-btn'} aria-label={t('log.settings')} onClick={() => setMenuOpen((v) => !v)}><IconSettings size={18} /></button>
       </div>
 
       {menuOpen && (
         <div className="metric" style={{ marginBottom: 12, padding: 6 }}>
           {editingName ? (
             <form onSubmit={submitName} style={{ padding: 8 }}>
-              <label className="field">Nombre
+              <label className="field">{t('field.name')}
                 <input value={nameDraft} onChange={(e) => setNameDraft(e.target.value)} autoFocus />
               </label>
-              <button className="btn primary" type="submit">Guardar</button>{' '}
-              <button className="btn" type="button" onClick={() => setEditingName(false)}>Cancelar</button>
+              <button className="btn primary" type="submit">{t('btn.save')}</button>{' '}
+              <button className="btn" type="button" onClick={() => setEditingName(false)}>{t('btn.cancel')}</button>
             </form>
           ) : confirmingDelete ? (
             <div style={{ padding: 10 }}>
-              <p style={{ margin: '0 0 10px' }}>¿Eliminar "{exercise.name}" y todo su histórico?</p>
-              <button className="btn" style={{ background: 'var(--danger)', color: '#fff', border: 'none' }} onClick={onDelete}>Sí, borrar</button>{' '}
-              <button className="btn" type="button" onClick={() => setConfirmingDelete(false)}>Cancelar</button>
+              <p style={{ margin: '0 0 10px' }}>{t('detail.deleteQuestion', { name: exercise.name })}</p>
+              <button className="btn" style={{ background: 'var(--danger)', color: '#fff', border: 'none' }} onClick={onDelete}>{t('detail.yesDelete')}</button>{' '}
+              <button className="btn" type="button" onClick={() => setConfirmingDelete(false)}>{t('btn.cancel')}</button>
             </div>
           ) : (
             <>
               <button className="settings-row" onClick={() => { setNameDraft(exercise.name); setEditingName(true); }}>
                 <span className="settings-ic"><IconEdit size={18} /></span>
-                <span className="settings-title">Editar nombre</span>
+                <span className="settings-title">{t('detail.editName')}</span>
               </button>
               <button className="settings-row" onClick={() => setConfirmingDelete(true)}>
                 <span className="settings-ic" style={{ background: 'var(--danger-soft)', color: 'var(--danger)' }}><IconTrash size={18} /></span>
-                <span className="settings-title">Borrar ejercicio</span>
+                <span className="settings-title">{t('detail.deleteExercise')}</span>
               </button>
             </>
           )}
@@ -135,13 +136,13 @@ export default function ExerciseDetail({
       {hasData && isStrength && (
         <>
           <div className="metric" style={{ marginBottom: 12 }}>
-            <div style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 8 }}>1RM estimado · histórico</div>
+            <div style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 8 }}>{t('detail.e1rmHistory')}</div>
             {exercise.entries.length >= 2 ? (
               <Suspense fallback={<div style={{ height: 220 }} />}>
                 <OneRmChart entries={exercise.entries} />
               </Suspense>
             ) : (
-              <p className="muted-sm" style={{ margin: 0 }}>Necesitas 2+ registros para ver la tendencia.</p>
+              <p className="muted-sm" style={{ margin: 0 }}>{t('detail.trend')}</p>
             )}
           </div>
 
@@ -156,7 +157,7 @@ export default function ExerciseDetail({
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, justifyContent: 'center', marginBottom: 10, flexWrap: 'wrap' }}>
               <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--muted)' }}>
-                <input type="checkbox" checked={showPlates} onChange={(e) => setShowPlates(e.target.checked)} /> Discos
+                <input type="checkbox" checked={showPlates} onChange={(e) => setShowPlates(e.target.checked)} /> {t('calc.plates')}
               </label>
               {showPlates && (
                 <span style={{ display: 'inline-flex', gap: 6 }}>
@@ -191,7 +192,7 @@ export default function ExerciseDetail({
               {data.length >= 2 ? (
                 <Suspense fallback={<div style={{ height: 220 }} />}><MetricChart data={data} /></Suspense>
               ) : (
-                <p className="muted-sm" style={{ margin: 0 }}>Necesitas 2+ registros para ver la tendencia.</p>
+                <p className="muted-sm" style={{ margin: 0 }}>{t('detail.trend')}</p>
               )}
             </div>
             {addSection}
@@ -201,22 +202,22 @@ export default function ExerciseDetail({
 
       {!hasData && (
         <>
-          <p>Sin registros todavía.</p>
+          <p>{t('detail.noRecords')}</p>
           {addSection}
         </>
       )}
 
       <div className="metric">
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 10 }}>
-          <button className="btn" onClick={() => setShowDates((v) => !v)}><IconCalendar size={16} />Fechas</button>
+          <button className="btn" onClick={() => setShowDates((v) => !v)}><IconCalendar size={16} />{t('detail.dates')}</button>
         </div>
 
         {showDates && (
           <div style={{ display: 'flex', gap: 10, marginBottom: 10 }}>
-            <label className="field" style={{ flex: 1 }}>Desde
+            <label className="field" style={{ flex: 1 }}>{t('detail.from')}
               <input type="date" value={from} onChange={(e) => setFrom(e.target.value)} />
             </label>
-            <label className="field" style={{ flex: 1 }}>Hasta
+            <label className="field" style={{ flex: 1 }}>{t('detail.to')}
               <input type="date" value={to} onChange={(e) => setTo(e.target.value)} />
             </label>
           </div>
@@ -225,13 +226,13 @@ export default function ExerciseDetail({
         {editing && (
           <form onSubmit={(e) => { e.preventDefault(); saveEdit(); }} className="metric" style={{ marginBottom: 12 }}>
             <EntryFields key={editId} type={exercise.type} initial={editInitial} onChange={setEditEntry} />
-            <button className="btn primary" type="submit">Guardar</button>{' '}
-            <button className="btn" type="button" onClick={() => setEditId(null)}>Cancelar</button>
+            <button className="btn primary" type="submit">{t('btn.save')}</button>{' '}
+            <button className="btn" type="button" onClick={() => setEditId(null)}>{t('btn.cancel')}</button>
           </form>
         )}
 
         <table>
-          <thead><tr>{historyHeaders(exercise.type || 'strength').map((h) => <th key={h}>{h}</th>)}<th aria-label="Acciones" /></tr></thead>
+          <thead><tr>{historyHeaders(exercise.type || 'strength').map((h) => <th key={h}>{h}</th>)}<th aria-label={t('detail.actions')} /></tr></thead>
           <tbody>
             {history.map((e) => (
               <tr key={e.id}>
@@ -240,13 +241,13 @@ export default function ExerciseDetail({
                   <div style={{ display: 'flex', gap: 6, justifyContent: 'flex-end' }}>
                     {confirmDelId === e.id ? (
                       <>
-                        <button className="act del" aria-label="Confirmar borrado" onClick={() => { onDeleteEntry(e.id); setConfirmDelId(null); }}><IconCheck size={15} /></button>
-                        <button className="act edit" aria-label="Cancelar" onClick={() => setConfirmDelId(null)}><IconX size={15} /></button>
+                        <button className="act del" aria-label={t('detail.confirmDelete')} onClick={() => { onDeleteEntry(e.id); setConfirmDelId(null); }}><IconCheck size={15} /></button>
+                        <button className="act edit" aria-label={t('btn.cancel')} onClick={() => setConfirmDelId(null)}><IconX size={15} /></button>
                       </>
                     ) : (
                       <>
-                        <button className="act edit" aria-label="Editar" onClick={() => startEdit(e)}><IconEdit size={15} /></button>
-                        <button className="act del" aria-label="Eliminar" onClick={() => { setEditId(null); setConfirmDelId(e.id); }}><IconTrash size={15} /></button>
+                        <button className="act edit" aria-label={t('detail.edit')} onClick={() => startEdit(e)}><IconEdit size={15} /></button>
+                        <button className="act del" aria-label={t('detail.delete')} onClick={() => { setEditId(null); setConfirmDelId(e.id); }}><IconTrash size={15} /></button>
                       </>
                     )}
                   </div>
@@ -270,8 +271,8 @@ function AddEntryForm({ type, onSave, onCancel }) {
   return (
     <form onSubmit={submit} className="metric" style={{ marginBottom: 12 }}>
       <EntryFields type={type} onChange={setEntry} />
-      <button className="btn primary" type="submit">Guardar registro</button>{' '}
-      <button className="btn" type="button" onClick={onCancel}>Cancelar</button>
+      <button className="btn primary" type="submit">{t('btn.saveRecord')}</button>{' '}
+      <button className="btn" type="button" onClick={onCancel}>{t('btn.cancel')}</button>
     </form>
   );
 }

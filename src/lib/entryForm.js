@@ -1,23 +1,25 @@
 import { parseTime } from './metrics';
 
+// `label` holds an i18n key; render sites resolve it with t() so the field
+// captions follow the active language.
 export const TYPE_FIELDS = {
   strength: [
-    { key: 'weight', label: 'Peso (kg)', kind: 'number' },
-    { key: 'reps', label: 'Reps', kind: 'int' },
+    { key: 'weight', label: 'field.weight', kind: 'number' },
+    { key: 'reps', label: 'field.reps', kind: 'int' },
   ],
   carry: [
-    { key: 'weight', label: 'Peso (kg)', kind: 'number' },
-    { key: 'distance', label: 'Distancia (m)', kind: 'number' },
+    { key: 'weight', label: 'field.weight', kind: 'number' },
+    { key: 'distance', label: 'field.distance', kind: 'number' },
   ],
   gymnastics: [
-    { key: 'reps', label: 'Reps', kind: 'int' },
-    { key: 'modality', label: 'Modalidad', kind: 'modality' },
-    { key: 'time', label: 'Tiempo (mm:ss)', kind: 'time', showIf: (raw) => raw.modality === 'accumulated' },
+    { key: 'reps', label: 'field.reps', kind: 'int' },
+    { key: 'modality', label: 'field.modality', kind: 'modality' },
+    { key: 'time', label: 'field.time', kind: 'time', showIf: (raw) => raw.modality === 'accumulated' },
   ],
   cardio: [
-    { key: 'distance', label: 'Distancia (m)', kind: 'number' },
-    { key: 'calories', label: 'Calorías', kind: 'int' },
-    { key: 'time', label: 'Tiempo (mm:ss)', kind: 'time' },
+    { key: 'distance', label: 'field.distance', kind: 'number' },
+    { key: 'calories', label: 'field.calories', kind: 'int' },
+    { key: 'time', label: 'field.time', kind: 'time' },
   ],
 };
 

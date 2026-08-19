@@ -1,4 +1,5 @@
 import { estimate1RM } from './oneRm';
+import { t } from './i18n';
 
 export function parseTime(str) {
   if (typeof str !== 'string') return null;
@@ -41,7 +42,7 @@ export function pillText(exercise) {
   const { type = 'strength', entries } = exercise;
   if (!entries.length) return null;
   if (type === 'carry') {
-    return `máx ${Math.max(...entries.map((e) => e.weight))} kg`;
+    return `${t('pill.max')} ${Math.max(...entries.map((e) => e.weight))} kg`;
   }
   if (type === 'gymnastics') {
     const unbroken = entries.filter((e) => e.modality === 'unbroken').map((e) => e.reps);
@@ -50,9 +51,9 @@ export function pillText(exercise) {
   }
   if (type === 'cardio') {
     const paces = entries.filter((e) => e.distance && e.time).map((e) => pacePerKm(e.distance, e.time));
-    if (paces.length) return `mejor ${formatTime(Math.min(...paces))} /km`;
+    if (paces.length) return `${t('pill.best')} ${formatTime(Math.min(...paces))} /km`;
     const powers = entries.filter((e) => e.calories && e.time).map((e) => powerCalMin(e.calories, e.time));
-    if (powers.length) return `mejor ${Math.round(Math.max(...powers))} cal/min`;
+    if (powers.length) return `${t('pill.best')} ${Math.round(Math.max(...powers))} cal/min`;
     return null;
   }
   const last = lastByDate(entries);
@@ -63,41 +64,41 @@ export function metricGrande(exercise) {
   const { type = 'strength', entries } = exercise;
   if (!entries.length) return null;
   if (type === 'carry') {
-    return { label: 'Peso máximo', value: `${Math.max(...entries.map((e) => e.weight))} kg` };
+    return { label: t('metric.maxWeight'), value: `${Math.max(...entries.map((e) => e.weight))} kg` };
   }
   if (type === 'gymnastics') {
     const ub = entries.filter((e) => e.modality === 'unbroken').map((e) => e.reps);
-    if (ub.length) return { label: 'Récord unbroken', value: `${Math.max(...ub)} reps` };
-    return { label: 'Máximo reps', value: `${Math.max(...entries.map((e) => e.reps))} reps` };
+    if (ub.length) return { label: t('metric.unbrokenRecord'), value: `${Math.max(...ub)} reps` };
+    return { label: t('metric.maxReps'), value: `${Math.max(...entries.map((e) => e.reps))} reps` };
   }
   if (type === 'cardio') {
     const paces = entries.filter((e) => e.distance && e.time).map((e) => pacePerKm(e.distance, e.time));
-    if (paces.length) return { label: 'Mejor ritmo', value: `${formatTime(Math.min(...paces))} /km` };
+    if (paces.length) return { label: t('metric.bestPace'), value: `${formatTime(Math.min(...paces))} /km` };
     const powers = entries.filter((e) => e.calories && e.time).map((e) => powerCalMin(e.calories, e.time));
-    if (powers.length) return { label: 'Mejor potencia', value: `${Math.round(Math.max(...powers))} cal/min` };
+    if (powers.length) return { label: t('metric.bestPower'), value: `${Math.round(Math.max(...powers))} cal/min` };
     return null;
   }
   const last = lastByDate(entries);
-  return { label: '1RM estimado', value: `${Math.round(estimate1RM(last.weight, last.reps))} kg` };
+  return { label: t('metric.e1rm'), value: `${Math.round(estimate1RM(last.weight, last.reps))} kg` };
 }
 
 export function chartMetrics(type) {
   if (type === 'carry') {
     return [
-      { key: 'weight', label: 'Peso', valueOf: (e) => e.weight },
-      { key: 'volume', label: 'Volumen', valueOf: (e) => e.weight * e.distance },
+      { key: 'weight', label: t('chart.weight'), valueOf: (e) => e.weight },
+      { key: 'volume', label: t('chart.volume'), valueOf: (e) => e.weight * e.distance },
     ];
   }
   if (type === 'gymnastics') {
     return [
-      { key: 'unbroken', label: 'Unbroken', valueOf: (e) => (e.modality === 'unbroken' ? e.reps : null) },
-      { key: 'time', label: 'Tiempo', valueOf: (e) => (e.modality === 'accumulated' ? e.time : null), fmt: formatTime },
+      { key: 'unbroken', label: t('modality.unbroken'), valueOf: (e) => (e.modality === 'unbroken' ? e.reps : null) },
+      { key: 'time', label: t('chart.time'), valueOf: (e) => (e.modality === 'accumulated' ? e.time : null), fmt: formatTime },
     ];
   }
   if (type === 'cardio') {
     return [
-      { key: 'rate', label: 'Ritmo·Potencia', valueOf: (e) => (e.distance ? pacePerKm(e.distance, e.time) : powerCalMin(e.calories, e.time)), fmt: formatTime },
-      { key: 'time', label: 'Tiempo', valueOf: (e) => e.time, fmt: formatTime },
+      { key: 'rate', label: t('chart.rate'), valueOf: (e) => (e.distance ? pacePerKm(e.distance, e.time) : powerCalMin(e.calories, e.time)), fmt: formatTime },
+      { key: 'time', label: t('chart.time'), valueOf: (e) => e.time, fmt: formatTime },
     ];
   }
   return [{ key: 'e1rm', label: 'e1RM', valueOf: (e) => Math.round(estimate1RM(e.weight, e.reps)) }];
@@ -113,16 +114,17 @@ export function chartSeries(exercise, metricKey) {
 }
 
 export function historyHeaders(type) {
-  if (type === 'carry') return ['Fecha', 'Peso', 'Distancia'];
-  if (type === 'gymnastics') return ['Fecha', 'Reps', 'Modalidad', 'Tiempo'];
-  if (type === 'cardio') return ['Fecha', 'Distancia', 'Calorías', 'Tiempo'];
-  return ['Fecha', 'Peso', 'Reps'];
+  const h = (k) => t(`h.${k}`);
+  if (type === 'carry') return [h('date'), h('weight'), h('distance')];
+  if (type === 'gymnastics') return [h('date'), h('reps'), h('modality'), h('time')];
+  if (type === 'cardio') return [h('date'), h('distance'), h('calories'), h('time')];
+  return [h('date'), h('weight'), h('reps')];
 }
 
 export function historyCells(type, e) {
   if (type === 'carry') return [e.date, `${e.weight} kg`, `${e.distance} m`];
   if (type === 'gymnastics') {
-    return [e.date, `${e.reps}`, e.modality === 'unbroken' ? 'Unbroken' : 'Acum.', e.modality === 'accumulated' ? formatTime(e.time) : '—'];
+    return [e.date, `${e.reps}`, e.modality === 'unbroken' ? t('modality.unbroken') : t('h.accum'), e.modality === 'accumulated' ? formatTime(e.time) : '—'];
   }
   if (type === 'cardio') {
     return [e.date, e.distance ? `${e.distance} m` : '—', e.calories ? `${e.calories} cal` : '—', formatTime(e.time)];

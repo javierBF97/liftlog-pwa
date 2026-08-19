@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { estimate1RM } from '../lib/oneRm';
 import { loadBar, saveBar, addPlate, removePlate, updatePlate, loadState, saveState } from '../lib/storage';
+import { t } from '../lib/i18n';
 import PercentTable from '../components/PercentTable';
 import RmTable from '../components/RmTable';
 import PlateCalc from '../components/PlateCalc';
@@ -10,10 +11,10 @@ function BarSelector({ bar, onBar }) {
   const [custom, setCustom] = useState('');
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: 8, margin: '12px 0', fontSize: 13, color: 'var(--muted)', flexWrap: 'wrap' }}>
-      Barra:
+      {t('calc.bar')}
       <button className={bar === 20 ? 'chip on' : 'chip'} onClick={() => onBar(20)}>20</button>
       <button className={bar === 15 ? 'chip on' : 'chip'} onClick={() => onBar(15)}>15</button>
-      <input type="number" inputMode="decimal" placeholder="a medida" value={custom}
+      <input type="number" inputMode="decimal" placeholder={t('calc.custom')} value={custom}
         onChange={(e) => { setCustom(e.target.value); const n = parseFloat(e.target.value); if (n > 0) onBar(n); }}
         style={{ width: 90 }} />
     </div>
@@ -45,12 +46,12 @@ export default function CalculatorsPage() {
 
   return (
     <div>
-      <h1>Calculadoras</h1>
+      <h1>{t('calc.title')}</h1>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '16px 0' }}>
         <div className="segmented lg">
           <button className={mode === 'pct' ? 'seg active' : 'seg'} onClick={() => setMode('pct')}>%</button>
           <button className={mode === 'rm' ? 'seg active' : 'seg'} onClick={() => setMode('rm')}>RM</button>
-          <button className={mode === 'plates' ? 'seg active' : 'seg'} onClick={() => setMode('plates')}>Discos</button>
+          <button className={mode === 'plates' ? 'seg active' : 'seg'} onClick={() => setMode('plates')}>{t('calc.plates')}</button>
         </div>
       </div>
 
@@ -69,21 +70,21 @@ export default function CalculatorsPage() {
         <>
           <form onSubmit={calculate}>
             <div style={{ display: 'flex', gap: 10 }}>
-              <label className="field" style={{ flex: 1 }}>Peso (kg)
+              <label className="field" style={{ flex: 1 }}>{t('field.weight')}
                 <input type="number" inputMode="decimal" value={weight} onChange={(e) => { setWeight(e.target.value); setOneRm(null); }} />
               </label>
-              <label className="field" style={{ flex: 1 }}>Reps
+              <label className="field" style={{ flex: 1 }}>{t('field.reps')}
                 <input type="number" inputMode="numeric" value={reps} onChange={(e) => { setReps(e.target.value); setOneRm(null); }} />
               </label>
             </div>
-            <button className="btn primary block" type="submit">Calcular</button>
+            <button className="btn primary block" type="submit">{t('btn.calculate')}</button>
           </form>
           {oneRm !== null && (
             <>
-              <p>1RM estimado: <strong>{Math.round(oneRm)} kg</strong></p>
+              <p>{t('calc.e1rm')} <strong>{Math.round(oneRm)} kg</strong></p>
               <BarSelector bar={bar} onBar={setBarPersist} />
               <label style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--muted)', marginBottom: 12 }}>
-                <input type="checkbox" checked={showPlates} onChange={(e) => setShowPlates(e.target.checked)} /> Mostrar discos
+                <input type="checkbox" checked={showPlates} onChange={(e) => setShowPlates(e.target.checked)} /> {t('calc.showPlates')}
               </label>
               {mode === 'pct'
                 ? <PercentTable oneRm={oneRm} showPlates={showPlates} bar={bar} plates={plates} />

@@ -6,6 +6,7 @@ import {
 } from '../lib/storage';
 import { pillText } from '../lib/metrics';
 import { emojiFor } from '../lib/types';
+import { t, getLang, setLang, LANGS } from '../lib/i18n';
 import { IconPlus, IconSearch, IconSettings, IconDownload, IconUpload } from '../components/icons';
 import ExerciseDetail from './ExerciseDetail';
 import EntryFields from '../components/EntryFields';
@@ -41,7 +42,7 @@ export default function ExercisesPage() {
         onUpdateEntry={(entryId, patch) => persistWith((prev) => updateEntry(prev, openId, entryId, patch))}
         onRename={(name) => {
           const dup = findExerciseByName(state, name);
-          if (dup && dup.id !== openId) { alert('Ya existe un ejercicio con ese nombre'); return; }
+          if (dup && dup.id !== openId) { alert(t('log.duplicate')); return; }
           persistWith((prev) => renameExercise(prev, openId, name));
         }}
         onDelete={() => { persistWith((prev) => deleteExercise(prev, openId)); setOpenId(null); }}
@@ -66,15 +67,20 @@ export default function ExercisesPage() {
     setQuickAddId((cur) => (cur === id ? null : id));
   }
 
+  // With the search panel closed, only show exercises that already have
+  // records; opening search reveals the full library (including "empty" ones)
+  // so the user can find something to log for the first time.
   const filtered = exercisesByRecent(state).filter((ex) =>
-    ex.name.toLowerCase().includes(query.trim().toLowerCase())
+    (panel === 'search' || ex.entries.length > 0)
+    && ex.name.toLowerCase().includes(query.trim().toLowerCase())
   );
+  const showEmptyHint = panel !== 'search' && state.exercises.length > 0 && filtered.length === 0;
 
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
-        <h1 style={{ margin: 0 }}>Registro</h1>
-        <button className={panel === 'settings' ? 'icon-btn accent' : 'icon-btn'} aria-label="Ajustes" onClick={() => togglePanel('settings')}>
+        <h1 style={{ margin: 0 }}>{t('log.title')}</h1>
+        <button className={panel === 'settings' ? 'icon-btn accent' : 'icon-btn'} aria-label={t('log.settings')} onClick={() => togglePanel('settings')}>
           <IconSettings size={18} />
         </button>
       </div>
@@ -84,10 +90,10 @@ export default function ExercisesPage() {
       )}
 
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
-        <button className={panel === 'search' ? 'icon-btn accent' : 'icon-btn'} aria-label="Buscar" onClick={() => togglePanel('search')}>
+        <button className={panel === 'search' ? 'icon-btn accent' : 'icon-btn'} aria-label={t('log.search')} onClick={() => togglePanel('search')}>
           <IconSearch size={18} />
         </button>
-        <button className="btn primary fab" aria-label="Nuevo registro" onClick={() => togglePanel('add')}>
+        <button className="btn primary fab" aria-label={t('log.newRecord')} onClick={() => togglePanel('add')}>
           <IconPlus size={20} />
         </button>
       </div>
@@ -96,7 +102,7 @@ export default function ExercisesPage() {
         <input
           type="search"
           className="search"
-          placeholder="Buscar ejercicio…"
+          placeholder={t('log.searchPlaceholder')}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           autoFocus
@@ -111,6 +117,8 @@ export default function ExercisesPage() {
         />
       )}
 
+      {showEmptyHint && <p className="muted-sm">{t('log.emptyHint')}</p>}
+
       <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
         {filtered.map((ex) => {
           return (
@@ -122,11 +130,11 @@ export default function ExercisesPage() {
                   </div>
                   {pillText(ex)
                     ? <span className="pill">{pillText(ex)}</span>
-                    : <span className="muted-sm">Sin registros</span>}
+                    : <span className="muted-sm">{t('pill.noRecords')}</span>}
                 </button>
                 <button
                   className="icon-btn accent"
-                  aria-label={`Añadir registro a ${ex.name}`}
+                  aria-label={t('log.addRecordTo', { name: ex.name })}
                   onClick={() => toggleQuickAdd(ex.id)}
                 >
                   <IconPlus size={18} />
@@ -170,14 +178,14 @@ function AddRecordForm({ exercises, onSave, onCancel }) {
 
   return (
     <form onSubmit={submit} className="metric" style={{ marginBottom: 16 }}>
-      <label className="field">Ejercicio
+      <label className="field">{t('field.exercise')}
         <input value={name} onChange={(e) => setName(e.target.value)} autoFocus />
       </label>
       {suggestions.length > 0 && (
         <div className="suggestions">
           {suggestions.map((ex) => (
             <button type="button" key={ex.id} className="suggestion" onClick={() => setName(ex.name)}>
-              {ex.name} <span style={{ color: 'var(--faint)', fontSize: 12 }}>existente</span>
+              {ex.name} <span style={{ color: 'var(--faint)', fontSize: 12 }}>{t('log.existing')}</span>
             </button>
           ))}
         </div>
@@ -186,11 +194,11 @@ function AddRecordForm({ exercises, onSave, onCancel }) {
       <EntryFields key={effectiveType} type={effectiveType} onChange={setEntry} />
       {name.trim() && (
         <p style={{ fontSize: 12, color: 'var(--faint)', margin: '0 0 12px' }}>
-          {exactMatch ? `Se guardará en ${exactMatch.name}` : `Se creará "${name.trim()}"`}
+          {exactMatch ? t('log.willSave', { name: exactMatch.name }) : t('log.willCreate', { name: name.trim() })}
         </p>
       )}
-      <button className="btn primary" type="submit">Guardar</button>{' '}
-      <button className="btn" type="button" onClick={onCancel}>Cancelar</button>
+      <button className="btn primary" type="submit">{t('btn.save')}</button>{' '}
+      <button className="btn" type="button" onClick={onCancel}>{t('btn.cancel')}</button>
     </form>
   );
 }
@@ -205,8 +213,8 @@ function LogForm({ type, onSave, onCancel }) {
   return (
     <form onSubmit={submit} style={{ marginTop: 8, paddingLeft: 8, borderLeft: '2px solid var(--border)' }}>
       <EntryFields type={type} onChange={setEntry} />
-      <button className="btn primary" type="submit">Guardar registro</button>{' '}
-      <button className="btn" type="button" onClick={onCancel}>Cancelar</button>
+      <button className="btn primary" type="submit">{t('btn.saveRecord')}</button>{' '}
+      <button className="btn" type="button" onClick={onCancel}>{t('btn.cancel')}</button>
     </form>
   );
 }
@@ -219,7 +227,7 @@ function BackupControls({ state, onImport }) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `crossfit-tracker-${today()}.json`;
+    a.download = `liftlog-${today()}.json`;
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -232,7 +240,7 @@ function BackupControls({ state, onImport }) {
       try {
         onImport(importJSON(reader.result));
       } catch (err) {
-        alert(`Importación fallida: ${err.message}`);
+        alert(t('log.importFailed', { message: err.message }));
       }
     };
     reader.readAsText(file);
@@ -244,18 +252,32 @@ function BackupControls({ state, onImport }) {
       <button className="settings-row" onClick={handleExport}>
         <span className="settings-ic"><IconDownload size={18} /></span>
         <span style={{ display: 'flex', flexDirection: 'column' }}>
-          <span className="settings-title">Exportar copia</span>
-          <span className="settings-sub">Descarga un JSON con todos tus datos</span>
+          <span className="settings-title">{t('backup.export')}</span>
+          <span className="settings-sub">{t('backup.exportSub')}</span>
         </span>
       </button>
       <label className="settings-row">
         <span className="settings-ic"><IconUpload size={18} /></span>
         <span style={{ display: 'flex', flexDirection: 'column' }}>
-          <span className="settings-title">Importar copia</span>
-          <span className="settings-sub">Restaura desde un archivo JSON</span>
+          <span className="settings-title">{t('backup.import')}</span>
+          <span className="settings-sub">{t('backup.importSub')}</span>
         </span>
         <input type="file" accept="application/json" hidden onChange={handleImport} />
       </label>
+      <div className="settings-row" style={{ cursor: 'default' }}>
+        <span style={{ display: 'flex', alignItems: 'center', gap: 10, width: '100%' }}>
+          <span className="settings-title" style={{ flex: 1 }}>{t('settings.language')}</span>
+          {LANGS.map((l) => (
+            <button
+              key={l}
+              className={getLang() === l ? 'chip on' : 'chip'}
+              onClick={() => setLang(l)}
+            >
+              {l === 'en' ? 'English' : 'Español'}
+            </button>
+          ))}
+        </span>
+      </div>
     </div>
   );
 }

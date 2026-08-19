@@ -14,6 +14,6 @@ describe('RmTable', () => {
     render(<RmTable oneRm={120} max={12} showPlates bar={20} plates={DEFAULT_PLATES} />);
     expect(screen.getByText('12RM')).toBeInTheDocument();
     expect(screen.queryByText('13RM')).not.toBeInTheDocument();
-    expect(screen.getByText(/discos/i)).toBeInTheDocument();
+    expect(screen.getByText(/plates \/side/i)).toBeInTheDocument();
   });
 });

@@ -1,8 +1,9 @@
 import { IconList, IconCalc } from './icons';
+import { t } from '../lib/i18n';
 
 const TABS = [
-  { id: 'exercises', label: 'Registro', Icon: IconList },
-  { id: 'calc', label: 'Calculadoras', Icon: IconCalc },
+  { id: 'exercises', label: () => t('nav.log'), Icon: IconList },
+  { id: 'calc', label: () => t('nav.calc'), Icon: IconCalc },
 ];
 
 export default function BottomNav({ active, onChange }) {
@@ -15,7 +16,7 @@ export default function BottomNav({ active, onChange }) {
           onClick={() => onChange(t.id)}
         >
           <t.Icon size={22} />
-          <span>{t.label}</span>
+          <span>{t.label()}</span>
         </button>
       ))}
     </nav>

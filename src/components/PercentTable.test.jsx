@@ -13,6 +13,6 @@ describe('PercentTable', () => {
   it('shows a plates column when showPlates is on', () => {
     render(<PercentTable oneRm={100} showPlates bar={20} plates={DEFAULT_PLATES} />);
     expect(screen.getAllByText('20').length).toBeGreaterThan(0);
-    expect(screen.getByText(/discos/i)).toBeInTheDocument();
+    expect(screen.getByText(/plates \/side/i)).toBeInTheDocument();
   });
 });
