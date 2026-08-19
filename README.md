@@ -4,7 +4,12 @@
 
 A local-first web app to log your lifts and plan your loads.
 
-<!-- screenshots -->
+<p align="center">
+  <img src="docs/screenshots/log.png" alt="Exercise log" width="24%">
+  <img src="docs/screenshots/detail.png" alt="Exercise detail with 1RM chart" width="24%">
+  <img src="docs/screenshots/calculators.png" alt="1RM calculator" width="24%">
+  <img src="docs/screenshots/plates.png" alt="Plate calculator" width="24%">
+</p>
 
 LiftLog runs in the browser and installs to your phone's home screen as a
 PWA. It works offline. It has no accounts and no server: your data stays on
