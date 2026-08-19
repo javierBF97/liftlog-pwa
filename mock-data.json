@@ -1,0 +1,2460 @@
+{
+  "version": 1,
+  "exercises": [
+    {
+      "id": "1d712890-0d66-4ad6-a2c1-e8deaea92ea9",
+      "name": "Back Squat",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "27090d6f-11a5-4a25-a4a6-0d45d1887212",
+          "date": "2026-03-18",
+          "weight": 102.5,
+          "reps": 3
+        },
+        {
+          "id": "1b89395a-b37e-4fad-b01e-836feee8516c",
+          "date": "2026-03-22",
+          "weight": 100,
+          "reps": 5
+        },
+        {
+          "id": "87082958-aeaa-4e79-a3ae-c48c1c58a166",
+          "date": "2026-03-26",
+          "weight": 100,
+          "reps": 3
+        },
+        {
+          "id": "25631c79-fe94-4df1-9d75-373554e41b8b",
+          "date": "2026-03-28",
+          "weight": 105,
+          "reps": 5
+        },
+        {
+          "id": "a871ebb7-62a1-4dce-9575-52819a1c8f2b",
+          "date": "2026-04-03",
+          "weight": 102.5,
+          "reps": 5
+        },
+        {
+          "id": "94371350-f49c-48ca-b048-a82bfaa92427",
+          "date": "2026-04-12",
+          "weight": 110,
+          "reps": 3
+        },
+        {
+          "id": "9ffecba1-69a9-4444-9a31-430bd7bfc8a7",
+          "date": "2026-04-24",
+          "weight": 107.5,
+          "reps": 3
+        },
+        {
+          "id": "96d10b1f-0580-4397-b6d3-7f409102d536",
+          "date": "2026-04-27",
+          "weight": 112.5,
+          "reps": 3
+        },
+        {
+          "id": "8a49b617-39fb-402c-9212-f43fccb935a3",
+          "date": "2026-05-06",
+          "weight": 112.5,
+          "reps": 5
+        },
+        {
+          "id": "56dd0773-4321-435c-8af3-8e3a099f9b1c",
+          "date": "2026-05-11",
+          "weight": 112.5,
+          "reps": 3
+        },
+        {
+          "id": "2784a817-1422-4b82-aa8a-584194641b24",
+          "date": "2026-05-14",
+          "weight": 115,
+          "reps": 3
+        },
+        {
+          "id": "b5abc540-0aff-45af-9cfb-8a85ce97f844",
+          "date": "2026-05-15",
+          "weight": 115,
+          "reps": 3
+        },
+        {
+          "id": "91178d01-0e31-4c0e-9f14-dd6a055100e6",
+          "date": "2026-05-21",
+          "weight": 112.5,
+          "reps": 3
+        },
+        {
+          "id": "77990ce2-aa7e-4d8a-b2c4-8616c218a929",
+          "date": "2026-05-23",
+          "weight": 117.5,
+          "reps": 3
+        },
+        {
+          "id": "3c7444ae-ab09-4321-8e72-bcf07ad20d88",
+          "date": "2026-05-31",
+          "weight": 120,
+          "reps": 5
+        },
+        {
+          "id": "6937e6a2-4b32-45d6-9ba8-033b04858ccc",
+          "date": "2026-06-10",
+          "weight": 117.5,
+          "reps": 3
+        },
+        {
+          "id": "34da0e0a-fc3f-40f5-805f-e548bbfe77e5",
+          "date": "2026-06-11",
+          "weight": 120,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "801fdb90-6a3a-496f-ba34-db80116effa6",
+      "name": "Front Squat",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "a807aaaf-ec6d-4cc0-bbbf-269ec3d9bb68",
+          "date": "2026-03-16",
+          "weight": 77.5,
+          "reps": 3
+        },
+        {
+          "id": "1f6cc05c-d708-4329-9dde-91dafaa39028",
+          "date": "2026-03-20",
+          "weight": 82.5,
+          "reps": 3
+        },
+        {
+          "id": "6f9c221c-996d-4243-9078-b6c03976270c",
+          "date": "2026-03-23",
+          "weight": 82.5,
+          "reps": 5
+        },
+        {
+          "id": "57c5d180-6bb9-410d-8625-e4cb5a5c6fbe",
+          "date": "2026-04-10",
+          "weight": 85,
+          "reps": 3
+        },
+        {
+          "id": "2db0806b-f491-49b7-aece-299d1850b366",
+          "date": "2026-04-15",
+          "weight": 85,
+          "reps": 5
+        },
+        {
+          "id": "cf507628-bd23-4259-84f9-6c76b89dc590",
+          "date": "2026-04-21",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "9d08df7e-7605-4505-a429-7357f72c3acd",
+          "date": "2026-04-27",
+          "weight": 90,
+          "reps": 3
+        },
+        {
+          "id": "de5ce0bd-58e4-4247-b1fd-9aa820d072ad",
+          "date": "2026-05-02",
+          "weight": 87.5,
+          "reps": 5
+        },
+        {
+          "id": "ae173d79-640c-499f-a3fd-911fbffc44a6",
+          "date": "2026-05-04",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "7578ae43-f9c2-4c68-ab9b-413451048b38",
+          "date": "2026-05-10",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "41462152-b67f-47eb-bf7e-9c386481d04e",
+          "date": "2026-06-01",
+          "weight": 95,
+          "reps": 5
+        },
+        {
+          "id": "4baf47a1-9d8e-4476-b35b-81b51302655b",
+          "date": "2026-06-08",
+          "weight": 97.5,
+          "reps": 3
+        },
+        {
+          "id": "403d95b2-613b-45fb-981c-80ed475979af",
+          "date": "2026-06-13",
+          "weight": 95,
+          "reps": 5
+        },
+        {
+          "id": "fa97d46a-eaca-442d-80f7-25902d4af861",
+          "date": "2026-06-15",
+          "weight": 97.5,
+          "reps": 3
+        },
+        {
+          "id": "0d1961b2-e9c4-4054-9c65-bb1303e7933a",
+          "date": "2026-06-16",
+          "weight": 97.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "b408b574-362a-46e4-9bbd-0b5370dc206d",
+      "name": "Overhead Squat",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "3b9a7c2a-ed41-4f20-aa51-e7b0f658bf98",
+          "date": "2026-03-18",
+          "weight": 52.5,
+          "reps": 2
+        },
+        {
+          "id": "8a14a438-5bc0-4191-a51e-f5a114e40109",
+          "date": "2026-03-20",
+          "weight": 57.5,
+          "reps": 2
+        },
+        {
+          "id": "3bb79cdd-68ec-4161-8d54-1388c67c836c",
+          "date": "2026-04-02",
+          "weight": 60,
+          "reps": 5
+        },
+        {
+          "id": "ee3738fc-07ba-4e96-bade-dcaab80e3776",
+          "date": "2026-04-07",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "79e9079c-7345-4770-aea7-60230da420f1",
+          "date": "2026-04-09",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "41f42707-fecb-4ab6-9ae9-bac38ded272c",
+          "date": "2026-04-18",
+          "weight": 57.5,
+          "reps": 5
+        },
+        {
+          "id": "2aad3bff-4e5a-42cd-ae0a-8c74fcd1bc08",
+          "date": "2026-04-19",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "3828cad7-0efc-4742-9f61-3ccad3806265",
+          "date": "2026-04-23",
+          "weight": 60,
+          "reps": 2
+        },
+        {
+          "id": "9b5115fc-5832-4fb0-8c03-0cd4a70b290c",
+          "date": "2026-04-30",
+          "weight": 60,
+          "reps": 3
+        },
+        {
+          "id": "9347ba63-2357-4ffe-9f01-663fc0a30bf4",
+          "date": "2026-05-03",
+          "weight": 60,
+          "reps": 2
+        },
+        {
+          "id": "4d4683d7-54ad-44fa-bc61-2e008f7756b2",
+          "date": "2026-05-07",
+          "weight": 62.5,
+          "reps": 2
+        },
+        {
+          "id": "a9f2de87-b2be-4b03-bda5-1163c2fafb01",
+          "date": "2026-05-08",
+          "weight": 62.5,
+          "reps": 5
+        },
+        {
+          "id": "559f63e7-935e-43cc-8188-a6da9d5cd32c",
+          "date": "2026-05-19",
+          "weight": 62.5,
+          "reps": 2
+        },
+        {
+          "id": "c9c80826-f645-40ba-b097-1f400c1e3cfa",
+          "date": "2026-05-24",
+          "weight": 65,
+          "reps": 3
+        },
+        {
+          "id": "630cfeea-cd97-4fd3-90b7-b143c004c7b0",
+          "date": "2026-06-13",
+          "weight": 67.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "4db82009-b658-416d-8e84-8ef0779dac0f",
+      "name": "Deadlift",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "8e2e7838-e72a-432d-ab12-e2311bed83d2",
+          "date": "2026-03-19",
+          "weight": 140,
+          "reps": 5
+        },
+        {
+          "id": "abb6dc2f-c813-44a4-8752-51beec3dd13b",
+          "date": "2026-03-20",
+          "weight": 145,
+          "reps": 1
+        },
+        {
+          "id": "9058c81a-b807-4a5a-968a-d4f7e092c0c2",
+          "date": "2026-03-31",
+          "weight": 142.5,
+          "reps": 3
+        },
+        {
+          "id": "33bb4c34-ea72-42e9-9ab3-27168db4fcf8",
+          "date": "2026-04-16",
+          "weight": 145,
+          "reps": 1
+        },
+        {
+          "id": "54dfc19f-a77b-4dfa-9b27-658eeec64d22",
+          "date": "2026-04-18",
+          "weight": 152.5,
+          "reps": 5
+        },
+        {
+          "id": "995c605b-722c-40ae-9a11-51c1f565b527",
+          "date": "2026-04-19",
+          "weight": 150,
+          "reps": 5
+        },
+        {
+          "id": "d3422a25-ccb9-4bd2-becc-490b040abf0a",
+          "date": "2026-04-27",
+          "weight": 152.5,
+          "reps": 1
+        },
+        {
+          "id": "03463259-afcf-43f7-8ec1-50772e64b5ac",
+          "date": "2026-05-13",
+          "weight": 157.5,
+          "reps": 5
+        },
+        {
+          "id": "1efa9efa-7635-4255-b60a-105663860b02",
+          "date": "2026-05-18",
+          "weight": 160,
+          "reps": 1
+        },
+        {
+          "id": "c4765ae9-0c3a-4fd3-ba85-92ed0a268384",
+          "date": "2026-05-22",
+          "weight": 157.5,
+          "reps": 1
+        },
+        {
+          "id": "6f0a8a3d-f3c6-4819-86c3-a2834e9528a2",
+          "date": "2026-05-28",
+          "weight": 162.5,
+          "reps": 3
+        },
+        {
+          "id": "2aa5e638-53a8-48ce-975c-17ed0df20333",
+          "date": "2026-06-02",
+          "weight": 157.5,
+          "reps": 3
+        },
+        {
+          "id": "c7e57a26-bbc7-4e40-959c-29c33f22545d",
+          "date": "2026-06-10",
+          "weight": 167.5,
+          "reps": 3
+        },
+        {
+          "id": "a44f7ed0-22e3-4fad-92ab-557c97f798a6",
+          "date": "2026-06-12",
+          "weight": 162.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "a6936aa9-447a-468e-9507-3f0849b8f980",
+      "name": "Sumo Deadlift",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "212a3eab-fbf1-4842-b65f-49e061021a8e",
+          "date": "2026-03-16",
+          "weight": 127.5,
+          "reps": 5
+        },
+        {
+          "id": "f2621ea2-cbdc-48e6-8ef5-5ead8b036ad9",
+          "date": "2026-03-20",
+          "weight": 132.5,
+          "reps": 5
+        },
+        {
+          "id": "5a35fb36-b0ca-475f-808e-c74efa9fa36b",
+          "date": "2026-04-05",
+          "weight": 135,
+          "reps": 5
+        },
+        {
+          "id": "ce6208ca-925a-4f27-ad31-3f3de496aeac",
+          "date": "2026-04-09",
+          "weight": 132.5,
+          "reps": 3
+        },
+        {
+          "id": "bf4fb90a-b4e0-49c7-937d-957a8bcec326",
+          "date": "2026-04-13",
+          "weight": 135,
+          "reps": 3
+        },
+        {
+          "id": "b80ac417-b16f-44ba-88ad-adace01a51c7",
+          "date": "2026-04-20",
+          "weight": 140,
+          "reps": 5
+        },
+        {
+          "id": "7c308b8f-6eea-451d-89ca-a4e9bf811e6c",
+          "date": "2026-04-27",
+          "weight": 137.5,
+          "reps": 3
+        },
+        {
+          "id": "cf80702e-aa56-4fb4-86f4-dd298225a9cb",
+          "date": "2026-05-08",
+          "weight": 142.5,
+          "reps": 5
+        },
+        {
+          "id": "00a976de-5526-4fff-ab0e-6899a2dea74a",
+          "date": "2026-05-10",
+          "weight": 145,
+          "reps": 3
+        },
+        {
+          "id": "98fddc49-08da-4ca2-bbb5-6b124600bc86",
+          "date": "2026-05-18",
+          "weight": 145,
+          "reps": 5
+        },
+        {
+          "id": "4a26e750-6ed7-4867-a179-1bf36eb2ae23",
+          "date": "2026-05-20",
+          "weight": 147.5,
+          "reps": 3
+        },
+        {
+          "id": "176d0cf4-37d0-4a9e-9651-72c43db2ed91",
+          "date": "2026-05-22",
+          "weight": 142.5,
+          "reps": 3
+        },
+        {
+          "id": "35ce9fd4-7403-4aa2-8dc2-be7abb04997b",
+          "date": "2026-05-26",
+          "weight": 145,
+          "reps": 5
+        },
+        {
+          "id": "9c1bc729-24cb-475e-8059-8418c729db39",
+          "date": "2026-06-08",
+          "weight": 152.5,
+          "reps": 3
+        },
+        {
+          "id": "66836004-6126-4154-a273-4222b46b140a",
+          "date": "2026-06-12",
+          "weight": 150,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "2c8dd86f-d30b-435a-bc69-469ca1bf6999",
+      "name": "Romanian Deadlift",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "0f5a587b-8e0e-4360-b3c6-f9ccab3c4ede",
+          "date": "2026-03-16",
+          "weight": 97.5,
+          "reps": 5
+        },
+        {
+          "id": "1c63b355-778d-4dc3-8d8c-9a9433530513",
+          "date": "2026-03-17",
+          "weight": 100,
+          "reps": 5
+        },
+        {
+          "id": "7a173d3e-53f9-42db-9549-53691a92b925",
+          "date": "2026-03-21",
+          "weight": 102.5,
+          "reps": 8
+        },
+        {
+          "id": "b1ffa036-9629-4b55-b020-71a2785e4308",
+          "date": "2026-03-23",
+          "weight": 100,
+          "reps": 8
+        },
+        {
+          "id": "148775ea-ae3f-419f-a21f-a7307fd83588",
+          "date": "2026-03-28",
+          "weight": 100,
+          "reps": 5
+        },
+        {
+          "id": "7b36aab8-3b83-4b01-8e4a-9d85581df3c9",
+          "date": "2026-04-01",
+          "weight": 102.5,
+          "reps": 5
+        },
+        {
+          "id": "a5dc67c2-2f86-4918-bbd0-682dd0264eae",
+          "date": "2026-04-02",
+          "weight": 102.5,
+          "reps": 5
+        },
+        {
+          "id": "d1c28abe-c05f-4b5e-8cf0-340ec57338f8",
+          "date": "2026-04-13",
+          "weight": 107.5,
+          "reps": 8
+        },
+        {
+          "id": "df115920-af85-4c3c-a49f-0fab1dd9b61d",
+          "date": "2026-04-17",
+          "weight": 105,
+          "reps": 8
+        },
+        {
+          "id": "ed1bfae3-61e5-4530-ba98-ef12c5d3b980",
+          "date": "2026-04-18",
+          "weight": 105,
+          "reps": 8
+        },
+        {
+          "id": "0fa02c43-a235-42c8-a788-061889b62bf6",
+          "date": "2026-04-24",
+          "weight": 107.5,
+          "reps": 5
+        },
+        {
+          "id": "66fc7b58-db97-4dd8-a105-a58bce060696",
+          "date": "2026-04-25",
+          "weight": 107.5,
+          "reps": 5
+        },
+        {
+          "id": "3521438b-7d41-4a9c-a4e2-57baa9f7bd14",
+          "date": "2026-05-11",
+          "weight": 112.5,
+          "reps": 8
+        },
+        {
+          "id": "8e091b7c-53f9-4289-8633-f0eaeb5044e8",
+          "date": "2026-05-14",
+          "weight": 107.5,
+          "reps": 5
+        },
+        {
+          "id": "dd659f4c-7371-4065-8c74-98f13776711e",
+          "date": "2026-05-24",
+          "weight": 110,
+          "reps": 8
+        },
+        {
+          "id": "5aad6377-3c97-47da-ab6b-c3fbcd25e9ad",
+          "date": "2026-05-30",
+          "weight": 115,
+          "reps": 8
+        },
+        {
+          "id": "d155c50a-320a-4584-a921-783aa452ee7d",
+          "date": "2026-06-01",
+          "weight": 115,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "a077e3c9-e163-447f-8135-ac23da972e28",
+      "name": "Power Clean",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "8977bb24-d8a1-40ad-9c0a-e577bee8c95a",
+          "date": "2026-04-03",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "8ebd3b8b-9190-4080-b948-ac42e4e4dd78",
+          "date": "2026-04-10",
+          "weight": 77.5,
+          "reps": 2
+        },
+        {
+          "id": "e697fcd0-7ea4-41d0-8855-91ed127ee85f",
+          "date": "2026-04-15",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "64cd2024-a25a-4ff8-ab38-27cff3c125e9",
+          "date": "2026-04-16",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "c8e4ba7d-057d-4700-b293-de8a7a4a7abd",
+          "date": "2026-04-17",
+          "weight": 77.5,
+          "reps": 3
+        },
+        {
+          "id": "7d43227f-6f35-4149-a8a9-b64f67ddbbb9",
+          "date": "2026-04-21",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "9a48a007-0ab3-4d2a-b065-098f003c7621",
+          "date": "2026-04-26",
+          "weight": 82.5,
+          "reps": 3
+        },
+        {
+          "id": "ac05f2ac-114e-4adc-b5fb-2ba2b6ebef76",
+          "date": "2026-04-29",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "66455073-14a4-431a-81db-3b02467c77a8",
+          "date": "2026-05-20",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "05079cb7-f3cb-47c7-939f-45a2de259203",
+          "date": "2026-05-29",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "f256e22a-1ee8-4138-a905-62c8a175c636",
+          "date": "2026-05-31",
+          "weight": 90,
+          "reps": 2
+        },
+        {
+          "id": "0a87ff0b-48c1-4a62-990d-60fdee577e40",
+          "date": "2026-06-06",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "77175fb5-d111-4419-a7c9-5db277d62cf7",
+          "date": "2026-06-07",
+          "weight": 90,
+          "reps": 3
+        },
+        {
+          "id": "3856d1d1-25a7-4e24-bfe1-612f2df036cf",
+          "date": "2026-06-11",
+          "weight": 90,
+          "reps": 3
+        },
+        {
+          "id": "c6646f53-6e86-4e02-8360-6df1e2a903f4",
+          "date": "2026-06-12",
+          "weight": 92.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "15020b24-8b65-4f54-a2cd-80621e1bd458",
+      "name": "Hang Power Clean",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "e949cb9d-e343-4fc0-9249-413888df38e4",
+          "date": "2026-03-21",
+          "weight": 70,
+          "reps": 3
+        },
+        {
+          "id": "7e4cca95-f620-4e45-8c13-4bee75c2a25a",
+          "date": "2026-04-05",
+          "weight": 72.5,
+          "reps": 2
+        },
+        {
+          "id": "ffb2fe3c-312e-403c-be74-b04c69d86980",
+          "date": "2026-04-09",
+          "weight": 70,
+          "reps": 2
+        },
+        {
+          "id": "21196e5f-0f3f-482e-8417-9f9a245c4b6d",
+          "date": "2026-04-19",
+          "weight": 75,
+          "reps": 2
+        },
+        {
+          "id": "e9ff8e2b-5991-4f70-8df8-952f6048698e",
+          "date": "2026-04-22",
+          "weight": 75,
+          "reps": 3
+        },
+        {
+          "id": "b9cba3f3-9536-4af7-8b12-4bc3d55a1f74",
+          "date": "2026-05-06",
+          "weight": 77.5,
+          "reps": 2
+        },
+        {
+          "id": "55e2a101-111f-41c5-bb45-90a64167b028",
+          "date": "2026-05-07",
+          "weight": 77.5,
+          "reps": 3
+        },
+        {
+          "id": "0ec75998-bafa-48b4-9a1d-c5af96ba24ce",
+          "date": "2026-05-15",
+          "weight": 77.5,
+          "reps": 2
+        },
+        {
+          "id": "26bdc7ed-881e-4e34-a3c3-00037856cfab",
+          "date": "2026-05-19",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "d42d660a-69e8-4b1c-92c9-a51c49db854d",
+          "date": "2026-05-21",
+          "weight": 80,
+          "reps": 2
+        },
+        {
+          "id": "b04ffee4-9a26-496a-ae3e-3a2aaa563a76",
+          "date": "2026-05-25",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "85de94b1-a0f8-4b2b-b0e3-e74ecef3a5f6",
+          "date": "2026-06-09",
+          "weight": 80,
+          "reps": 2
+        },
+        {
+          "id": "3fc3f157-5bf5-42ce-9f2b-18d5fb453963",
+          "date": "2026-06-14",
+          "weight": 80,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "92fa4083-c439-4fff-b60e-1a32b5f6d7a0",
+      "name": "Squat Clean",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "0b27c398-cba2-444d-9282-6a6eb1afc812",
+          "date": "2026-04-03",
+          "weight": 87.5,
+          "reps": 1
+        },
+        {
+          "id": "4e454724-260b-48a5-a5df-3f2eb584ef66",
+          "date": "2026-04-06",
+          "weight": 90,
+          "reps": 2
+        },
+        {
+          "id": "b7874ff4-3965-46c7-b10a-b4fdbee43abf",
+          "date": "2026-04-18",
+          "weight": 92.5,
+          "reps": 2
+        },
+        {
+          "id": "80361b3f-929d-41f3-bd13-8f067eac75a0",
+          "date": "2026-04-21",
+          "weight": 92.5,
+          "reps": 1
+        },
+        {
+          "id": "0292ef70-60e3-41a1-9895-227ce694444f",
+          "date": "2026-04-22",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "dcaa4104-2828-4807-9f6a-040fb201290d",
+          "date": "2026-04-23",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "41b5e9f5-c0aa-4bc2-ba13-022c2aa9b0a3",
+          "date": "2026-04-29",
+          "weight": 95,
+          "reps": 3
+        },
+        {
+          "id": "8fbbf924-b3ec-4e68-9597-dbf852f88aa7",
+          "date": "2026-05-05",
+          "weight": 92.5,
+          "reps": 2
+        },
+        {
+          "id": "c8f0d37e-6836-4322-9194-e1ce4d4f81ac",
+          "date": "2026-05-11",
+          "weight": 95,
+          "reps": 2
+        },
+        {
+          "id": "e8d64d17-c6d5-4f46-88a6-e3c4ebadb313",
+          "date": "2026-05-14",
+          "weight": 92.5,
+          "reps": 1
+        },
+        {
+          "id": "725a7eb3-3719-4b2d-98d2-b820b47c8a86",
+          "date": "2026-05-20",
+          "weight": 97.5,
+          "reps": 3
+        },
+        {
+          "id": "0d380177-cfb4-468c-8fda-eac40dab8841",
+          "date": "2026-05-22",
+          "weight": 95,
+          "reps": 1
+        },
+        {
+          "id": "9fc46fc3-5da2-4996-a9aa-7c09058f8c8a",
+          "date": "2026-05-25",
+          "weight": 97.5,
+          "reps": 1
+        },
+        {
+          "id": "74a5399d-ede3-413d-a826-51f6fb1e360f",
+          "date": "2026-06-05",
+          "weight": 97.5,
+          "reps": 3
+        },
+        {
+          "id": "31d8f839-7773-452d-9307-870516b22395",
+          "date": "2026-06-09",
+          "weight": 100,
+          "reps": 3
+        },
+        {
+          "id": "fd6089ca-8edf-43f0-8a7d-c46067049e8f",
+          "date": "2026-06-11",
+          "weight": 100,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "eb16f8c2-5c0e-4000-8be4-77fb4c759cbf",
+      "name": "Clean and Jerk",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "dfbd4ece-c2d2-42da-a74a-ad0b86ea05ff",
+          "date": "2026-03-24",
+          "weight": 82.5,
+          "reps": 1
+        },
+        {
+          "id": "3ed029dc-4f0a-4d19-b5a3-8e2b77a04c4d",
+          "date": "2026-03-28",
+          "weight": 80,
+          "reps": 1
+        },
+        {
+          "id": "03b6ccfc-6e19-4367-a059-49492605f645",
+          "date": "2026-04-04",
+          "weight": 85,
+          "reps": 1
+        },
+        {
+          "id": "d3f18cff-d401-4d42-b543-87378258c254",
+          "date": "2026-04-05",
+          "weight": 85,
+          "reps": 1
+        },
+        {
+          "id": "56351d88-a146-4656-82e7-e3862a3d445f",
+          "date": "2026-04-08",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "247be14a-0fde-41d1-a898-3f476140cbda",
+          "date": "2026-04-10",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "437529a7-5001-48b3-aced-cd89d402ca47",
+          "date": "2026-04-16",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "4e36f82b-3b1e-4227-979b-7768b87e64f6",
+          "date": "2026-04-17",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "1cfdac88-c1f4-4009-a090-eba86f2763ac",
+          "date": "2026-04-22",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "fc2760a8-16a8-412b-9ff3-4298664aa236",
+          "date": "2026-05-04",
+          "weight": 90,
+          "reps": 1
+        },
+        {
+          "id": "7584a3f7-75c9-417e-9466-da7cf9674fec",
+          "date": "2026-05-22",
+          "weight": 87.5,
+          "reps": 2
+        },
+        {
+          "id": "7ed9e59f-0c3f-4c59-b9d5-cfe99355ed44",
+          "date": "2026-05-28",
+          "weight": 90,
+          "reps": 1
+        },
+        {
+          "id": "8d6c9cb8-a53a-47db-94d5-2512b8fd6310",
+          "date": "2026-06-04",
+          "weight": 92.5,
+          "reps": 1
+        },
+        {
+          "id": "de1e2f8f-41c9-4bf1-9999-ad95d1e9a0be",
+          "date": "2026-06-09",
+          "weight": 92.5,
+          "reps": 2
+        },
+        {
+          "id": "7c220b21-baaf-4096-bb62-ed9edd881e19",
+          "date": "2026-06-16",
+          "weight": 92.5,
+          "reps": 2
+        }
+      ]
+    },
+    {
+      "id": "6177f914-04d9-4e54-8951-ebbfab65594d",
+      "name": "Power Snatch",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "68e984b6-2033-4ff6-93ad-fdf1bf866bda",
+          "date": "2026-03-17",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "10a0ce9a-2466-4917-a6df-6018580d8243",
+          "date": "2026-03-18",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "df3374a7-d287-4912-8f68-732e224d78c1",
+          "date": "2026-03-21",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "a3097516-cd30-4b66-a4f0-82e56e81f4b5",
+          "date": "2026-04-07",
+          "weight": 57.5,
+          "reps": 2
+        },
+        {
+          "id": "a6e2d953-dd0a-4c44-89f5-871c6bf3fd4c",
+          "date": "2026-04-11",
+          "weight": 57.5,
+          "reps": 2
+        },
+        {
+          "id": "15cfb667-04a0-47b9-9b42-9fcccf86d879",
+          "date": "2026-04-13",
+          "weight": 55,
+          "reps": 2
+        },
+        {
+          "id": "c2f8fa33-3f97-4a82-b641-198ebd0376e8",
+          "date": "2026-04-26",
+          "weight": 60,
+          "reps": 3
+        },
+        {
+          "id": "1067ec87-6a9e-4b4d-939f-ae4295cb6291",
+          "date": "2026-04-27",
+          "weight": 60,
+          "reps": 2
+        },
+        {
+          "id": "1a135af8-c3ee-4ccc-8318-ae66aff4145f",
+          "date": "2026-05-07",
+          "weight": 60,
+          "reps": 3
+        },
+        {
+          "id": "de8ce74a-638d-4651-b549-686a9e3d1ded",
+          "date": "2026-05-31",
+          "weight": 62.5,
+          "reps": 3
+        },
+        {
+          "id": "3ce47b4a-a900-47be-8f50-d91584684641",
+          "date": "2026-06-07",
+          "weight": 62.5,
+          "reps": 3
+        },
+        {
+          "id": "f7144669-fbc5-419d-bf72-f48d360318f7",
+          "date": "2026-06-10",
+          "weight": 62.5,
+          "reps": 2
+        }
+      ]
+    },
+    {
+      "id": "54b89b26-c1a0-4825-bb26-b1990c9edee1",
+      "name": "Hang Snatch",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "b9c4a008-18d9-4c9c-8a54-1f7f7d464a6f",
+          "date": "2026-03-16",
+          "weight": 50,
+          "reps": 2
+        },
+        {
+          "id": "e807e757-f87a-4e99-b5d4-b96d42e2a9bb",
+          "date": "2026-03-20",
+          "weight": 50,
+          "reps": 2
+        },
+        {
+          "id": "1ae798a4-9df4-41b7-b93d-1e86cf2a5959",
+          "date": "2026-03-23",
+          "weight": 50,
+          "reps": 2
+        },
+        {
+          "id": "b6890b7f-026e-4580-b83b-c1f34e9b05ac",
+          "date": "2026-03-24",
+          "weight": 50,
+          "reps": 2
+        },
+        {
+          "id": "ac7cbe1e-e57e-4cdc-bfa7-9fa076fd52da",
+          "date": "2026-04-01",
+          "weight": 50,
+          "reps": 3
+        },
+        {
+          "id": "7e00e834-00d6-4ac8-84d6-45fa5b33b05a",
+          "date": "2026-04-03",
+          "weight": 52.5,
+          "reps": 2
+        },
+        {
+          "id": "60f84806-ba29-47e3-9856-189828506f6a",
+          "date": "2026-04-10",
+          "weight": 52.5,
+          "reps": 3
+        },
+        {
+          "id": "7bc3e000-b783-4163-b3e1-190b6c3b8cba",
+          "date": "2026-05-12",
+          "weight": 55,
+          "reps": 2
+        },
+        {
+          "id": "c50afcbb-2a8b-4e73-9927-8086660e0b6b",
+          "date": "2026-05-13",
+          "weight": 55,
+          "reps": 2
+        },
+        {
+          "id": "33ab9fba-b7bb-4194-8cf2-f354bb106adc",
+          "date": "2026-05-24",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "41c32439-2914-44a7-b931-22ff72ebe972",
+          "date": "2026-05-26",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "758e8055-05c9-40ee-8028-18085bc40771",
+          "date": "2026-05-31",
+          "weight": 57.5,
+          "reps": 2
+        },
+        {
+          "id": "5b9b2770-9687-44ce-9771-e85af3023874",
+          "date": "2026-06-07",
+          "weight": 57.5,
+          "reps": 2
+        },
+        {
+          "id": "fdf5a682-3f06-4cbe-9d9e-e0b8adf8afa5",
+          "date": "2026-06-09",
+          "weight": 57.5,
+          "reps": 2
+        },
+        {
+          "id": "d91aaba0-0250-4523-96f6-bebb2056effd",
+          "date": "2026-06-10",
+          "weight": 60,
+          "reps": 2
+        },
+        {
+          "id": "e90e4526-8736-42fa-aa1e-219164bfcd31",
+          "date": "2026-06-11",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "6a9b8810-e7f7-4ca0-a391-cb426ce6de7f",
+          "date": "2026-06-14",
+          "weight": 60,
+          "reps": 2
+        }
+      ]
+    },
+    {
+      "id": "85401b35-0619-4692-bfc2-6bc32fa6465f",
+      "name": "Squat Snatch",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "4f7c05f9-5645-4920-8476-658cee876718",
+          "date": "2026-03-16",
+          "weight": 62.5,
+          "reps": 2
+        },
+        {
+          "id": "ff7596d7-0382-4262-9395-e3234764ebc2",
+          "date": "2026-03-17",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "ed435281-3ebc-4064-8c73-bfbc6e6648db",
+          "date": "2026-03-18",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "e26017bc-5f17-4d4b-b58b-0dc5e710ba30",
+          "date": "2026-03-31",
+          "weight": 62.5,
+          "reps": 2
+        },
+        {
+          "id": "4f6c5380-271d-4010-b9a2-2bbdaac72770",
+          "date": "2026-04-02",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "13ea3d68-1fc3-478c-9f04-3697fb3c8dfb",
+          "date": "2026-04-04",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "c32349b8-bb87-4599-93ab-b3757c2f8dd7",
+          "date": "2026-04-07",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "d2b4a1ac-12d5-443b-a140-18fe3164cec9",
+          "date": "2026-04-11",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "2e9839ad-09c1-4d48-b698-2a780d9e9129",
+          "date": "2026-04-16",
+          "weight": 62.5,
+          "reps": 1
+        },
+        {
+          "id": "a991c922-b9fd-4b11-9e7a-bce66bac5ab6",
+          "date": "2026-04-30",
+          "weight": 65,
+          "reps": 1
+        },
+        {
+          "id": "94a86b36-80c3-44b3-bd32-58d9b016b76d",
+          "date": "2026-05-12",
+          "weight": 65,
+          "reps": 1
+        },
+        {
+          "id": "13909f36-3ff4-4d08-862b-11dc9d6f7765",
+          "date": "2026-05-14",
+          "weight": 67.5,
+          "reps": 2
+        },
+        {
+          "id": "f28e8419-aeee-407b-96bb-2d9be0c686a5",
+          "date": "2026-05-22",
+          "weight": 67.5,
+          "reps": 1
+        },
+        {
+          "id": "4097c514-74b8-4778-9243-fc30342d8e7d",
+          "date": "2026-06-05",
+          "weight": 67.5,
+          "reps": 2
+        },
+        {
+          "id": "595ceb91-7bdf-4d59-99da-021a8c289836",
+          "date": "2026-06-11",
+          "weight": 70,
+          "reps": 2
+        },
+        {
+          "id": "2822adca-0778-461e-9369-d9424cf30621",
+          "date": "2026-06-12",
+          "weight": 67.5,
+          "reps": 2
+        },
+        {
+          "id": "010dfc56-7615-4752-92a2-ec313a022d66",
+          "date": "2026-06-14",
+          "weight": 67.5,
+          "reps": 1
+        }
+      ]
+    },
+    {
+      "id": "d51dab3d-49d7-4617-80c3-c26353faae42",
+      "name": "Push Press",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "7545170e-6193-4496-bc53-7d3ec534262c",
+          "date": "2026-03-17",
+          "weight": 70,
+          "reps": 5
+        },
+        {
+          "id": "08db9af9-e3bb-4690-874a-e3d7f057a7d2",
+          "date": "2026-03-20",
+          "weight": 70,
+          "reps": 3
+        },
+        {
+          "id": "b39fca6a-eaaf-4e26-99c1-0a362fe30fc6",
+          "date": "2026-03-26",
+          "weight": 72.5,
+          "reps": 5
+        },
+        {
+          "id": "fb013e9c-d9a1-4978-ad80-7deefa69c7a6",
+          "date": "2026-03-29",
+          "weight": 72.5,
+          "reps": 3
+        },
+        {
+          "id": "debd2316-1cf9-4bb4-b9eb-e60ddf0b5bb2",
+          "date": "2026-04-03",
+          "weight": 70,
+          "reps": 5
+        },
+        {
+          "id": "0121695e-6b0d-4eb9-bf4d-f74925cc3e01",
+          "date": "2026-04-08",
+          "weight": 72.5,
+          "reps": 3
+        },
+        {
+          "id": "fec68cbe-8d01-4dd2-9fab-805067778502",
+          "date": "2026-04-14",
+          "weight": 72.5,
+          "reps": 5
+        },
+        {
+          "id": "b7093470-92d1-4864-b421-5b73d0ec8d15",
+          "date": "2026-05-02",
+          "weight": 77.5,
+          "reps": 3
+        },
+        {
+          "id": "bedb96c3-f79b-4df5-8be8-b6c18aed6b76",
+          "date": "2026-05-09",
+          "weight": 77.5,
+          "reps": 3
+        },
+        {
+          "id": "a4b39322-d493-4204-b103-8aeee6a551b8",
+          "date": "2026-05-10",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "e9910199-90e1-43f7-a173-731ec2cd385b",
+          "date": "2026-05-12",
+          "weight": 77.5,
+          "reps": 5
+        },
+        {
+          "id": "fa9f2876-c9cd-483c-8e39-10a15980e04e",
+          "date": "2026-05-24",
+          "weight": 77.5,
+          "reps": 5
+        },
+        {
+          "id": "ea040fb7-6ae8-4d21-9fd9-bd056f30d5af",
+          "date": "2026-05-27",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "4c96ce55-13de-4427-adbc-9b8c624796f1",
+          "date": "2026-06-05",
+          "weight": 80,
+          "reps": 5
+        },
+        {
+          "id": "199db9da-a8a2-4a5f-99ce-522f82f8f0ee",
+          "date": "2026-06-08",
+          "weight": 80,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "3e885eac-acfc-4b94-a8f6-9c5cf881834c",
+      "name": "Push Jerk",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "5a9bfd57-1031-4e70-9c73-3d655838cc36",
+          "date": "2026-03-17",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "77f78189-32ea-40e7-9743-56b21c03e2df",
+          "date": "2026-03-25",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "67cea478-7e2d-4720-98f6-6889aedbde40",
+          "date": "2026-03-26",
+          "weight": 82.5,
+          "reps": 3
+        },
+        {
+          "id": "f3511503-519a-40fd-877e-cde3ed3d6869",
+          "date": "2026-03-27",
+          "weight": 80,
+          "reps": 2
+        },
+        {
+          "id": "74b4554b-961e-45cf-9b73-93954a74543e",
+          "date": "2026-03-29",
+          "weight": 85,
+          "reps": 3
+        },
+        {
+          "id": "65242de1-7fa1-4d78-bd0f-ca54a7cfb757",
+          "date": "2026-04-01",
+          "weight": 85,
+          "reps": 3
+        },
+        {
+          "id": "5b5eacec-4b7b-4a4f-9b01-09ce252e6f8b",
+          "date": "2026-04-05",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "fe0cc4bf-9829-4753-b7c2-dfbc629427d4",
+          "date": "2026-04-08",
+          "weight": 80,
+          "reps": 3
+        },
+        {
+          "id": "f5187335-940b-4cd2-beaf-c877e42e9b85",
+          "date": "2026-04-13",
+          "weight": 82.5,
+          "reps": 2
+        },
+        {
+          "id": "d4db960e-d2c7-426e-9e9e-066199c7230c",
+          "date": "2026-04-15",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "305300f9-c68c-4b01-bb46-55156f72cc5a",
+          "date": "2026-04-16",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "d1435e71-2479-491a-91f5-7835240fe3fa",
+          "date": "2026-04-24",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "9452024b-fe2f-490e-b348-2c3bd4704b63",
+          "date": "2026-04-26",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "cd20c9dc-99f6-4ba7-ac74-eacca0926012",
+          "date": "2026-05-11",
+          "weight": 90,
+          "reps": 3
+        },
+        {
+          "id": "0c9e553b-716b-44b2-994b-4efb6f75afe5",
+          "date": "2026-06-03",
+          "weight": 92.5,
+          "reps": 2
+        },
+        {
+          "id": "489a9404-6010-4256-a844-73ccf8002669",
+          "date": "2026-06-06",
+          "weight": 90,
+          "reps": 2
+        },
+        {
+          "id": "759954d5-a9b7-4fd5-af17-279eb2bb3e77",
+          "date": "2026-06-13",
+          "weight": 92.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "b9c38c31-e846-43d0-a60a-a5984e5be141",
+      "name": "Split Jerk",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "c578ad10-b4e2-4f14-8f13-d12a7edb609f",
+          "date": "2026-03-18",
+          "weight": 85,
+          "reps": 1
+        },
+        {
+          "id": "325729d9-f1d3-442a-aa20-565797088b5d",
+          "date": "2026-03-21",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "c1aa9ed3-91cb-4ce6-82ee-93fde37dc36c",
+          "date": "2026-03-29",
+          "weight": 85,
+          "reps": 2
+        },
+        {
+          "id": "10c54bf3-3c58-4941-af3c-13323ec4e9e3",
+          "date": "2026-04-22",
+          "weight": 90,
+          "reps": 2
+        },
+        {
+          "id": "c0eb84af-5f25-4759-9867-58ab04c34194",
+          "date": "2026-04-26",
+          "weight": 87.5,
+          "reps": 3
+        },
+        {
+          "id": "e599ef2d-14bf-4b6f-a672-7463d0eb8b07",
+          "date": "2026-04-28",
+          "weight": 92.5,
+          "reps": 2
+        },
+        {
+          "id": "0568cbd6-2c19-4d48-90f0-d359fdfbe24b",
+          "date": "2026-05-05",
+          "weight": 92.5,
+          "reps": 1
+        },
+        {
+          "id": "3cea62de-84a2-48be-813a-e50e50d9322f",
+          "date": "2026-05-15",
+          "weight": 92.5,
+          "reps": 1
+        },
+        {
+          "id": "d63b60fe-a87a-4ddd-a32f-a08e001c0596",
+          "date": "2026-05-16",
+          "weight": 92.5,
+          "reps": 1
+        },
+        {
+          "id": "382a9cbb-629a-4116-88df-679a505d96c6",
+          "date": "2026-05-17",
+          "weight": 95,
+          "reps": 3
+        },
+        {
+          "id": "ce76e592-2f8b-43cb-938f-e35164a6a8e7",
+          "date": "2026-05-18",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "50513182-1802-4998-a0e4-61456a24f6f5",
+          "date": "2026-05-21",
+          "weight": 95,
+          "reps": 1
+        },
+        {
+          "id": "c7ab5928-1321-499f-879b-d93d536da39c",
+          "date": "2026-05-27",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "846239d3-5abf-487e-9825-d884d86ea6ab",
+          "date": "2026-05-29",
+          "weight": 95,
+          "reps": 2
+        },
+        {
+          "id": "5d61bc4b-511f-455e-bd7a-3b0a655a65e6",
+          "date": "2026-06-08",
+          "weight": 95,
+          "reps": 3
+        },
+        {
+          "id": "b730122f-bbba-46f3-b029-fd59138da425",
+          "date": "2026-06-10",
+          "weight": 97.5,
+          "reps": 2
+        },
+        {
+          "id": "ebe9e21e-d188-460a-aa5f-cf555461fe42",
+          "date": "2026-06-11",
+          "weight": 95,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "d5c2fc4b-b914-4c4f-9c48-96912139ae96",
+      "name": "Strict Press",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "e5eb033d-c620-4738-b277-ec7b36bcec3d",
+          "date": "2026-03-20",
+          "weight": 50,
+          "reps": 5
+        },
+        {
+          "id": "b4a83fb6-478a-4b04-8ad8-758fc8cfc81e",
+          "date": "2026-04-01",
+          "weight": 50,
+          "reps": 3
+        },
+        {
+          "id": "7203cbec-8376-40b2-8491-da0800b04f22",
+          "date": "2026-04-17",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "ad2ed7fd-3c4e-416c-8af7-1a4c67af88b0",
+          "date": "2026-04-29",
+          "weight": 55,
+          "reps": 5
+        },
+        {
+          "id": "c1ec4355-b62c-475d-b346-d32d72998aad",
+          "date": "2026-04-30",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "8c401efc-5a4f-43e8-a9b7-51d3061514f7",
+          "date": "2026-05-01",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "79cfa11e-2751-4ca8-8d83-34198020866b",
+          "date": "2026-05-03",
+          "weight": 55,
+          "reps": 5
+        },
+        {
+          "id": "6393c90d-c319-43bb-9559-3145fae6600a",
+          "date": "2026-05-06",
+          "weight": 55,
+          "reps": 5
+        },
+        {
+          "id": "3e07fa3e-dc09-4ce7-8982-566790b20b7a",
+          "date": "2026-05-10",
+          "weight": 55,
+          "reps": 3
+        },
+        {
+          "id": "2d9fa2ae-cfd3-497b-9a49-4760ce7df5cc",
+          "date": "2026-05-29",
+          "weight": 57.5,
+          "reps": 3
+        },
+        {
+          "id": "4ff70bc4-4f6a-4fa7-a1e6-ecd44193f34a",
+          "date": "2026-05-31",
+          "weight": 55,
+          "reps": 5
+        },
+        {
+          "id": "789a570a-54c3-4568-8c80-4736598ae349",
+          "date": "2026-06-08",
+          "weight": 60,
+          "reps": 5
+        },
+        {
+          "id": "1556a73d-a726-4839-82ff-a9a86286b10b",
+          "date": "2026-06-10",
+          "weight": 57.5,
+          "reps": 5
+        },
+        {
+          "id": "3d404739-de6c-4072-8260-b4e5c28f8f79",
+          "date": "2026-06-14",
+          "weight": 57.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "52fda99a-2809-40b5-8b19-46cf841d5b74",
+      "name": "Bench Press",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "b0385fb6-ce5b-4726-b2cc-3ba49babc099",
+          "date": "2026-03-25",
+          "weight": 90,
+          "reps": 3
+        },
+        {
+          "id": "8543ff93-fa2c-44f3-be94-227343ec7a3c",
+          "date": "2026-03-28",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "58249045-03b0-4e3a-b32f-7299da099e8c",
+          "date": "2026-04-01",
+          "weight": 95,
+          "reps": 5
+        },
+        {
+          "id": "69dc8b31-5050-4fd8-8e7e-6ccc1c5150bb",
+          "date": "2026-04-13",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "b3d2bd48-4dde-4c10-8e58-47423eb5be82",
+          "date": "2026-04-14",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "35025b58-4275-4fc1-abf6-2963e1e02311",
+          "date": "2026-04-16",
+          "weight": 92.5,
+          "reps": 3
+        },
+        {
+          "id": "ce0587f6-ee30-42b4-885b-eb6023db2081",
+          "date": "2026-04-18",
+          "weight": 95,
+          "reps": 3
+        },
+        {
+          "id": "ccc169db-891a-4d29-be7f-d838c985913a",
+          "date": "2026-05-01",
+          "weight": 97.5,
+          "reps": 5
+        },
+        {
+          "id": "64b18fd4-06cb-4b58-aa0a-63e8c84f32f0",
+          "date": "2026-05-03",
+          "weight": 97.5,
+          "reps": 5
+        },
+        {
+          "id": "df4a693a-9474-485d-a8c4-8c99295e3a41",
+          "date": "2026-05-04",
+          "weight": 97.5,
+          "reps": 5
+        },
+        {
+          "id": "b4ee710d-c635-4b76-90ee-d999569eb629",
+          "date": "2026-05-18",
+          "weight": 100,
+          "reps": 5
+        },
+        {
+          "id": "7b1ce5db-fc1c-4c2a-b6c6-5715730e1d1e",
+          "date": "2026-05-26",
+          "weight": 100,
+          "reps": 3
+        },
+        {
+          "id": "05ae3ea2-76e2-4def-9e49-22aab6a4085f",
+          "date": "2026-05-28",
+          "weight": 102.5,
+          "reps": 3
+        },
+        {
+          "id": "aa834100-15c3-4f87-b8f3-cbad6eedd8d6",
+          "date": "2026-06-01",
+          "weight": 105,
+          "reps": 3
+        },
+        {
+          "id": "0203d411-4da0-4563-8de9-534d7522f942",
+          "date": "2026-06-02",
+          "weight": 100,
+          "reps": 3
+        },
+        {
+          "id": "f4e774a3-9257-4068-abe9-f3b77de5c3ff",
+          "date": "2026-06-12",
+          "weight": 105,
+          "reps": 3
+        },
+        {
+          "id": "1e0f75b3-6559-4107-85fe-d54289598ed8",
+          "date": "2026-06-15",
+          "weight": 105,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "45a0edb1-2c1f-4035-86ed-2d0622799896",
+      "name": "Thruster",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "83abb0df-53cf-435b-b6fc-30f264276ca5",
+          "date": "2026-03-24",
+          "weight": 62.5,
+          "reps": 3
+        },
+        {
+          "id": "72ab5e2f-4c21-4a96-883f-8070d7158369",
+          "date": "2026-04-03",
+          "weight": 62.5,
+          "reps": 5
+        },
+        {
+          "id": "1571b743-2310-4cd0-9a24-9a4e76654b2e",
+          "date": "2026-04-08",
+          "weight": 65,
+          "reps": 5
+        },
+        {
+          "id": "6d3f575d-f9a9-4740-bd35-ed5a9eae2066",
+          "date": "2026-04-17",
+          "weight": 65,
+          "reps": 3
+        },
+        {
+          "id": "9b188e51-b1c8-46c1-bcfe-62a2dd3862a2",
+          "date": "2026-04-19",
+          "weight": 65,
+          "reps": 3
+        },
+        {
+          "id": "4d86438f-45da-4ac0-aa7c-93a0fedc86f6",
+          "date": "2026-04-22",
+          "weight": 65,
+          "reps": 5
+        },
+        {
+          "id": "3e8ce405-62f6-46a0-a2ad-c364b596b612",
+          "date": "2026-04-28",
+          "weight": 65,
+          "reps": 5
+        },
+        {
+          "id": "817aa214-cc1c-44ee-a49e-7071855d13ef",
+          "date": "2026-04-30",
+          "weight": 65,
+          "reps": 3
+        },
+        {
+          "id": "e0fb6525-6a76-4d93-9fc4-7e512cf03da1",
+          "date": "2026-05-01",
+          "weight": 65,
+          "reps": 5
+        },
+        {
+          "id": "eb172a71-8f4c-4899-958f-b928bca172c9",
+          "date": "2026-05-02",
+          "weight": 67.5,
+          "reps": 3
+        },
+        {
+          "id": "a2bd3483-0f52-4da6-8c41-b3ebc0b6dc4b",
+          "date": "2026-05-06",
+          "weight": 67.5,
+          "reps": 3
+        },
+        {
+          "id": "bbc54988-e05e-4788-a2d3-e4516bd8cd44",
+          "date": "2026-05-14",
+          "weight": 70,
+          "reps": 3
+        },
+        {
+          "id": "9239b56b-44ec-4124-9af3-e78fab4613b4",
+          "date": "2026-05-27",
+          "weight": 67.5,
+          "reps": 5
+        },
+        {
+          "id": "a72cff4b-447d-43a0-9fc6-8741e6768764",
+          "date": "2026-05-31",
+          "weight": 70,
+          "reps": 3
+        },
+        {
+          "id": "7b797166-6d42-49df-b1f3-06a354f41310",
+          "date": "2026-06-08",
+          "weight": 72.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "id": "7c3d4338-dc21-4cf8-82c7-8ed99c21e372",
+      "name": "Front Rack Lunge",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "5cef24f3-a386-44be-a8e1-f2d7bfc47559",
+          "date": "2026-03-17",
+          "weight": 70,
+          "reps": 8
+        },
+        {
+          "id": "1eb99a94-f5c1-496b-8c03-a773dff14232",
+          "date": "2026-03-22",
+          "weight": 70,
+          "reps": 5
+        },
+        {
+          "id": "0f8432a3-01c9-4128-b8a6-04459add5cba",
+          "date": "2026-03-29",
+          "weight": 70,
+          "reps": 8
+        },
+        {
+          "id": "c2174510-2a1d-4ef6-b821-1f4734ecb5d8",
+          "date": "2026-04-04",
+          "weight": 70,
+          "reps": 8
+        },
+        {
+          "id": "4ee3215c-c3af-4296-9ab2-a3f09cdf0bc1",
+          "date": "2026-04-08",
+          "weight": 72.5,
+          "reps": 8
+        },
+        {
+          "id": "a1363e73-84c8-492e-b19e-15ced5182add",
+          "date": "2026-04-10",
+          "weight": 75,
+          "reps": 8
+        },
+        {
+          "id": "b05a011a-6847-47d6-be71-759db93cdd9c",
+          "date": "2026-04-12",
+          "weight": 75,
+          "reps": 8
+        },
+        {
+          "id": "98c69184-7034-412d-9cdf-315b57698d31",
+          "date": "2026-04-16",
+          "weight": 75,
+          "reps": 8
+        },
+        {
+          "id": "54b988ee-c1c2-41ed-a8f6-6c2dce18ae01",
+          "date": "2026-05-13",
+          "weight": 77.5,
+          "reps": 8
+        },
+        {
+          "id": "256e7488-1697-4e09-a5b7-0511419e7951",
+          "date": "2026-05-15",
+          "weight": 77.5,
+          "reps": 5
+        },
+        {
+          "id": "5bb6ad8f-8444-435c-935c-1f094e6221dc",
+          "date": "2026-05-19",
+          "weight": 80,
+          "reps": 8
+        },
+        {
+          "id": "27432445-209a-4f05-8195-dea1c9927300",
+          "date": "2026-05-20",
+          "weight": 77.5,
+          "reps": 5
+        },
+        {
+          "id": "45a1d777-0862-40ec-bf05-146ddac1e204",
+          "date": "2026-05-23",
+          "weight": 77.5,
+          "reps": 8
+        },
+        {
+          "id": "33f59685-1a07-4813-8218-8211491d95a5",
+          "date": "2026-05-25",
+          "weight": 77.5,
+          "reps": 5
+        },
+        {
+          "id": "d47417d6-a40c-4301-b647-d44274026b7d",
+          "date": "2026-05-31",
+          "weight": 80,
+          "reps": 8
+        },
+        {
+          "id": "aa9c5ed0-7667-4028-9413-00ce465cb24d",
+          "date": "2026-06-05",
+          "weight": 80,
+          "reps": 8
+        },
+        {
+          "id": "a07c78b7-3120-4fee-82c4-17f80201190a",
+          "date": "2026-06-12",
+          "weight": 82.5,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "id": "eb3521d4-5ed6-421b-95c8-1d92460990fd",
+      "name": "Back Rack Lunge",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "d933188b-3bb7-42b7-aa26-c86ed0e7b45e",
+          "date": "2026-03-22",
+          "weight": 82.5,
+          "reps": 8
+        },
+        {
+          "id": "95f9802b-4f91-444e-ab59-81f0971bd277",
+          "date": "2026-03-25",
+          "weight": 80,
+          "reps": 8
+        },
+        {
+          "id": "4fb0d0cc-9b5c-4076-88d4-83b230fd3e73",
+          "date": "2026-03-30",
+          "weight": 82.5,
+          "reps": 8
+        },
+        {
+          "id": "286477f1-e6cc-4ee3-a3c6-59699337fd7a",
+          "date": "2026-04-01",
+          "weight": 82.5,
+          "reps": 5
+        },
+        {
+          "id": "6844ac68-360e-41ae-b28e-1d19a9302741",
+          "date": "2026-04-05",
+          "weight": 85,
+          "reps": 5
+        },
+        {
+          "id": "91c6ddc1-82a6-42a2-a1c8-f5998d16aa2f",
+          "date": "2026-04-06",
+          "weight": 82.5,
+          "reps": 8
+        },
+        {
+          "id": "0e09703e-6075-4d70-8115-790109b3ccff",
+          "date": "2026-04-07",
+          "weight": 85,
+          "reps": 8
+        },
+        {
+          "id": "70c635e0-e86c-44e6-8e17-417e97761882",
+          "date": "2026-04-16",
+          "weight": 82.5,
+          "reps": 8
+        },
+        {
+          "id": "27c3b994-0d35-4968-a143-260ca0c6d565",
+          "date": "2026-04-22",
+          "weight": 82.5,
+          "reps": 8
+        },
+        {
+          "id": "807bf747-1106-4be1-a667-253eb38e601c",
+          "date": "2026-04-28",
+          "weight": 85,
+          "reps": 8
+        },
+        {
+          "id": "26027480-d980-475a-b83c-fa3046df7453",
+          "date": "2026-05-07",
+          "weight": 87.5,
+          "reps": 8
+        },
+        {
+          "id": "fef4f35a-6be6-40d3-a38e-e9515228bfc1",
+          "date": "2026-05-08",
+          "weight": 85,
+          "reps": 8
+        },
+        {
+          "id": "42ad601f-0d65-4119-a7d5-f90a732322b0",
+          "date": "2026-05-12",
+          "weight": 90,
+          "reps": 5
+        },
+        {
+          "id": "2ec82cc3-7789-48dd-b076-0422df81c9d2",
+          "date": "2026-05-27",
+          "weight": 92.5,
+          "reps": 8
+        },
+        {
+          "id": "361d9b10-ebd3-4f67-b200-487a995e5df6",
+          "date": "2026-05-29",
+          "weight": 92.5,
+          "reps": 5
+        },
+        {
+          "id": "e328e661-8234-47d8-9e78-dc2662106751",
+          "date": "2026-06-04",
+          "weight": 92.5,
+          "reps": 8
+        },
+        {
+          "id": "3b0f6e73-c2eb-400b-9ff0-92cb62764a23",
+          "date": "2026-06-05",
+          "weight": 90,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "id": "a1bcd197-238e-4e13-9a64-9fd4ad980d91",
+      "name": "Weighted Pull-up",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "80a0fde7-c9b4-455d-9399-5699e68b12a1",
+          "date": "2026-03-18",
+          "weight": 20,
+          "reps": 5
+        },
+        {
+          "id": "b457a0e3-d4ea-4acb-8803-e0c8bf7fd5f2",
+          "date": "2026-03-26",
+          "weight": 20,
+          "reps": 5
+        },
+        {
+          "id": "9ddec744-10b1-4d8a-aee0-23b9866ea902",
+          "date": "2026-03-30",
+          "weight": 22.5,
+          "reps": 5
+        },
+        {
+          "id": "766c1196-17d4-400b-a5b0-9069805e34fb",
+          "date": "2026-04-08",
+          "weight": 22.5,
+          "reps": 3
+        },
+        {
+          "id": "ece7bd27-6e38-4989-922f-5333ecb68ab1",
+          "date": "2026-04-09",
+          "weight": 22.5,
+          "reps": 5
+        },
+        {
+          "id": "c06ea77a-0480-420c-bd4d-a3c8449c9c2e",
+          "date": "2026-04-18",
+          "weight": 22.5,
+          "reps": 3
+        },
+        {
+          "id": "9c9b2b12-3576-4c64-8dc2-a2eda6fd80b6",
+          "date": "2026-04-25",
+          "weight": 25,
+          "reps": 3
+        },
+        {
+          "id": "4578f886-313b-441a-b50a-780623e79820",
+          "date": "2026-04-27",
+          "weight": 25,
+          "reps": 5
+        },
+        {
+          "id": "3f92fa3c-2772-4a31-badb-a5afd3e9210e",
+          "date": "2026-05-07",
+          "weight": 25,
+          "reps": 3
+        },
+        {
+          "id": "b01443c7-cb5e-40a6-95e8-8c0db896a9a2",
+          "date": "2026-05-09",
+          "weight": 25,
+          "reps": 3
+        },
+        {
+          "id": "24e6f64b-5ba3-4c43-8f18-28f1deddfeed",
+          "date": "2026-05-22",
+          "weight": 27.5,
+          "reps": 5
+        },
+        {
+          "id": "140bd3ec-5e14-46b4-a3b1-913d5836598b",
+          "date": "2026-06-08",
+          "weight": 27.5,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "c9063cc9-bf52-4f61-9d6e-d3e43500e28e",
+      "name": "Bent Over Row",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "6b8fa80d-a9de-441b-9bf1-add954b453a2",
+          "date": "2026-03-22",
+          "weight": 70,
+          "reps": 5
+        },
+        {
+          "id": "ac02aef8-5f7d-4b1d-ae26-8e59365abaf7",
+          "date": "2026-03-30",
+          "weight": 72.5,
+          "reps": 5
+        },
+        {
+          "id": "5c6a5330-817a-4e24-8508-3410242c8ea7",
+          "date": "2026-03-31",
+          "weight": 72.5,
+          "reps": 5
+        },
+        {
+          "id": "c8df927e-4b71-494b-9e32-11c3fe60c5ae",
+          "date": "2026-04-04",
+          "weight": 72.5,
+          "reps": 5
+        },
+        {
+          "id": "157276c4-332a-45b0-a609-f83ffdb35205",
+          "date": "2026-04-09",
+          "weight": 75,
+          "reps": 8
+        },
+        {
+          "id": "c02d257b-4ca9-4985-b9d3-42aa4eb4389a",
+          "date": "2026-04-13",
+          "weight": 75,
+          "reps": 5
+        },
+        {
+          "id": "76b411b8-c1cf-4669-a88f-b421314e830a",
+          "date": "2026-04-14",
+          "weight": 75,
+          "reps": 8
+        },
+        {
+          "id": "01046cb4-47fd-4205-beaa-44710942cdb0",
+          "date": "2026-05-05",
+          "weight": 77.5,
+          "reps": 5
+        },
+        {
+          "id": "88da9151-4839-4731-9752-71466640df4a",
+          "date": "2026-05-22",
+          "weight": 77.5,
+          "reps": 8
+        },
+        {
+          "id": "c5c138e3-67e6-47a9-89bb-6774c3d21d86",
+          "date": "2026-05-24",
+          "weight": 80,
+          "reps": 5
+        },
+        {
+          "id": "340c2181-dcf8-493d-b662-83764febd41c",
+          "date": "2026-06-03",
+          "weight": 82.5,
+          "reps": 5
+        },
+        {
+          "id": "859859e6-2c49-495c-b230-e3b7ef76543c",
+          "date": "2026-06-09",
+          "weight": 82.5,
+          "reps": 5
+        },
+        {
+          "id": "2bdb4332-9105-483c-bb37-0884cf3db501",
+          "date": "2026-06-14",
+          "weight": 80,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "id": "f2c2b1b7-d7b9-4159-9b47-606fa8bd2bac",
+      "name": "Hip Thrust",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "d2798747-b1c1-445a-bd14-14de581826e9",
+          "date": "2026-03-16",
+          "weight": 117.5,
+          "reps": 5
+        },
+        {
+          "id": "3ddfd03b-1f90-4544-832a-0a8306e6ab28",
+          "date": "2026-03-27",
+          "weight": 120,
+          "reps": 5
+        },
+        {
+          "id": "32b36831-54ba-4775-9e1b-c3f4f7f53f3b",
+          "date": "2026-04-09",
+          "weight": 125,
+          "reps": 5
+        },
+        {
+          "id": "b9153b7f-1fd0-48fa-b66d-4e2b77c2b3ff",
+          "date": "2026-04-12",
+          "weight": 125,
+          "reps": 8
+        },
+        {
+          "id": "57e28275-d094-4311-9ff3-47f1a800be50",
+          "date": "2026-04-14",
+          "weight": 125,
+          "reps": 5
+        },
+        {
+          "id": "b801cbc2-9530-41e8-a917-e66bb3ace691",
+          "date": "2026-04-20",
+          "weight": 127.5,
+          "reps": 5
+        },
+        {
+          "id": "7fa52a7a-d840-4bc4-be7b-b42c66f7f730",
+          "date": "2026-04-26",
+          "weight": 130,
+          "reps": 5
+        },
+        {
+          "id": "e3d11d87-f79e-43d1-884a-f7ae6f802758",
+          "date": "2026-05-09",
+          "weight": 130,
+          "reps": 5
+        },
+        {
+          "id": "532ae72e-e581-4bbd-bf89-7c1a2089c88d",
+          "date": "2026-05-10",
+          "weight": 132.5,
+          "reps": 5
+        },
+        {
+          "id": "90255144-25bf-411b-a1a7-c724d0204da4",
+          "date": "2026-05-12",
+          "weight": 137.5,
+          "reps": 5
+        },
+        {
+          "id": "d92e752b-a246-4887-aa57-f0512cc7a0a6",
+          "date": "2026-05-15",
+          "weight": 135,
+          "reps": 5
+        },
+        {
+          "id": "35570e82-8e5e-4d8a-bb4e-a6fcedf31986",
+          "date": "2026-05-19",
+          "weight": 135,
+          "reps": 5
+        },
+        {
+          "id": "78383ba8-5fa0-47ea-8af6-89e6acd21f14",
+          "date": "2026-06-11",
+          "weight": 140,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "id": "60cb90ee-6295-4eb1-b25f-c17072572518",
+      "name": "Good Morning",
+      "createdAt": "2026-03-15T00:00:00.000Z",
+      "entries": [
+        {
+          "id": "060f3346-b9a9-45db-a6d2-e0dd0af237eb",
+          "date": "2026-03-19",
+          "weight": 60,
+          "reps": 5
+        },
+        {
+          "id": "7770d582-642c-4c62-bc7d-2f695e872f28",
+          "date": "2026-03-23",
+          "weight": 60,
+          "reps": 5
+        },
+        {
+          "id": "3f981b15-a1cf-40b9-bb6b-2696428ab289",
+          "date": "2026-03-26",
+          "weight": 60,
+          "reps": 5
+        },
+        {
+          "id": "4ea45228-3a53-4d34-ab22-f3c4707569ad",
+          "date": "2026-04-05",
+          "weight": 62.5,
+          "reps": 5
+        },
+        {
+          "id": "d6bbf2a9-1914-4b79-8a54-e26c8dd33b2e",
+          "date": "2026-04-06",
+          "weight": 62.5,
+          "reps": 8
+        },
+        {
+          "id": "55489da8-59b9-4f12-9b5b-fa6c1bd73e09",
+          "date": "2026-04-07",
+          "weight": 62.5,
+          "reps": 8
+        },
+        {
+          "id": "18cba4b0-c292-49da-92c2-46063f1b5005",
+          "date": "2026-04-08",
+          "weight": 62.5,
+          "reps": 8
+        },
+        {
+          "id": "1d182c37-c68d-4a84-b0cb-7137a5a3406a",
+          "date": "2026-04-09",
+          "weight": 62.5,
+          "reps": 5
+        },
+        {
+          "id": "938a1c75-e1b1-45b2-8b36-3fe0731ee5d7",
+          "date": "2026-04-28",
+          "weight": 65,
+          "reps": 5
+        },
+        {
+          "id": "dbe3d3d5-112d-4e28-bcae-716a8220f6bd",
+          "date": "2026-05-12",
+          "weight": 65,
+          "reps": 5
+        },
+        {
+          "id": "71d6591d-da97-44d6-9865-878588b7f551",
+          "date": "2026-05-13",
+          "weight": 65,
+          "reps": 8
+        },
+        {
+          "id": "e6eba902-60e5-4c58-86e7-22b66a819190",
+          "date": "2026-05-24",
+          "weight": 65,
+          "reps": 8
+        },
+        {
+          "id": "b5079b3c-f468-4902-ae1d-04e492655df3",
+          "date": "2026-06-03",
+          "weight": 67.5,
+          "reps": 5
+        },
+        {
+          "id": "2e77e012-ce0a-49b5-8861-6669db737f73",
+          "date": "2026-06-09",
+          "weight": 67.5,
+          "reps": 5
+        },
+        {
+          "id": "d767aa3d-b8c0-4d4f-bde9-a5400ff68b30",
+          "date": "2026-06-15",
+          "weight": 67.5,
+          "reps": 5
+        }
+      ]
+    }
+  ]
+}

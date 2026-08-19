@@ -1,0 +1,805 @@
+{
+  "version": 1,
+  "exercises": [
+    {
+      "id": "4193afb5-f402-4215-bde8-ea996a58041c",
+      "name": "Back Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "3a7e2ee1-e20b-4c0d-a064-7f0e85955b64",
+      "name": "Front Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "042b974f-e893-4b60-8107-6c4eae259e7d",
+      "name": "Overhead Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "667901b2-8c87-4b73-8c07-75790e5230ec",
+      "name": "Box Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f6f8dd6f-7bc4-47cc-9416-f457c0ac94dd",
+      "name": "Pause Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "0cd457c5-781a-43a0-b2af-23b1a09f469d",
+      "name": "Goblet Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "7d82d021-1d46-4d80-a5aa-7839538deb9d",
+      "name": "Zercher Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "8027ae3a-3934-4ca3-90f7-05c1cdeb4015",
+      "name": "Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "03f951c2-ac6a-41ad-bfb9-68a278897309",
+      "name": "Sumo Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "96ed3bbf-5b57-485b-91e3-698fbf7bccc1",
+      "name": "Romanian Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "915a1474-af74-4b2a-a048-075810b6ea16",
+      "name": "Deficit Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "58d9ecad-5fb2-493e-9e1a-dfeb7ca46919",
+      "name": "Snatch-Grip Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "8cdb47f5-981b-4221-a4d6-64ccb0cfef2d",
+      "name": "Stiff-Leg Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "cd38a440-4d2b-4c24-ad48-29b6746738e5",
+      "name": "Good Morning",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "7e120dff-8681-476c-91a7-d53b4f012182",
+      "name": "Hip Thrust",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "7abd4924-5533-489f-9267-7ff4365c0b9b",
+      "name": "Glute Bridge",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "d157f78e-32a8-4dfa-acb0-4c9122af7f23",
+      "name": "Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "da71d12e-3be6-49ab-944e-95933529a496",
+      "name": "Power Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "c9a7f82e-57de-40ff-8517-f160641ad525",
+      "name": "Hang Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "53f64a00-7f25-43ce-ad18-d4a022b608ac",
+      "name": "Hang Power Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "edc90ada-1874-4f3f-8627-e0daeffed269",
+      "name": "Muscle Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "7623e539-ef64-463e-8558-664457035238",
+      "name": "Snatch Balance",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "2b76c088-2b68-4bb2-82be-fb277e3fd543",
+      "name": "Snatch Pull",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "0ded1a1e-cca6-48e5-aa73-39c8170de052",
+      "name": "Snatch High Pull",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "3f51bc30-9efb-4b13-85ef-4589ba6926c7",
+      "name": "Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "a602aeb8-f90d-444d-9110-678944f5d9c9",
+      "name": "Power Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "cdf02648-6b13-4936-a3a9-dc6b2e1558c4",
+      "name": "Hang Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "913a3391-e946-4c2e-9d17-ffa7a1f6f43d",
+      "name": "Hang Power Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "cd3c767f-8c21-4d4b-b7f0-bdba89798e11",
+      "name": "Muscle Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "3e81f287-7998-41e3-92ba-6d8f07c1ca6b",
+      "name": "Clean Pull",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f22c0a18-d6b6-4c8a-9c8b-a452a77aa7ac",
+      "name": "Clean High Pull",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "83be46bb-dc72-4a94-95e0-5f25339f89b5",
+      "name": "Clean and Jerk",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "1f313a76-a8de-4b66-83b8-af217db722e5",
+      "name": "Power Clean and Jerk",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "c3c4c086-6dc5-4ae7-8b26-8f848b246186",
+      "name": "Push Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "d26befa6-16ff-4c93-ae27-c2fbe4b4bdbd",
+      "name": "Push Jerk",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "dc0e09e2-7de6-4864-a11c-91eba60c6a5e",
+      "name": "Split Jerk",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "73dde8f6-8c66-4441-9b37-f3a2802fcde4",
+      "name": "Strict Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "d89d876c-085b-4692-9a1f-39915683cca6",
+      "name": "Bench Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "464cb0d2-d4d9-4fdb-b620-13f014d818aa",
+      "name": "Close-Grip Bench Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "61f95a12-1fbe-4747-89c8-70563df5f17a",
+      "name": "Incline Bench Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "88ea1964-e0f4-45e3-b2a1-49af624e06d9",
+      "name": "Z-Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "59459406-8d9f-4ca6-9303-762169ce83a7",
+      "name": "Behind-the-Neck Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "a50360a2-02ff-4994-8581-f2063a0a66b3",
+      "name": "Thruster",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "6a250d24-7037-4e0c-91ac-fbbb52e53613",
+      "name": "Front Rack Lunge",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "a84891c6-cdbb-4eaf-a952-c54eb8ecb4cd",
+      "name": "Back Rack Lunge",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "245c3177-254d-4d11-8af0-dd22074a2912",
+      "name": "Overhead Lunge",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "c7e40b9d-a0e1-4da6-8e77-590f68ef4515",
+      "name": "Walking Lunge",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "a134c231-0620-4688-a903-c6cdda15593a",
+      "name": "Bulgarian Split Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f9793096-1bd0-498e-91b8-fcdc9f96e982",
+      "name": "Weighted Step-up",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "14c4709e-f518-479c-85b7-295ced8dda40",
+      "name": "Sandbag Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "db8983e6-5fc3-4062-805e-6b5a8f9ffead",
+      "name": "Bent Over Row",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "9fa5352b-0744-4086-b3cc-0926d297a0fb",
+      "name": "Pendlay Row",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "709c6b24-b9ba-48ab-b9a0-08d80f4e7d97",
+      "name": "Weighted Pull-up",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "a5812d09-7fea-4a65-9fa8-ede7b09af480",
+      "name": "Weighted Chin-up",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "b436aeac-8a94-4219-a14b-e6e7a717f23c",
+      "name": "Weighted Dip",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "4be05529-a152-45fd-ba7e-678d7c65a0c9",
+      "name": "Dumbbell Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "c6bc962d-594c-4402-a221-d962d78fe5d5",
+      "name": "Dumbbell Clean and Jerk",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "69fb908d-d907-4071-a0eb-54573f4ae61b",
+      "name": "Dumbbell Thruster",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "6ccec91d-fd2b-4039-bcd6-5d82ee9a9ebc",
+      "name": "Dumbbell Push Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "ec9eb078-bf2d-48e5-972d-45c12f8e2e61",
+      "name": "Dumbbell Bench Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "1dcb7539-8c40-47e4-91b6-184cf361f672",
+      "name": "Dumbbell Row",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "0eb1dfa0-2f4a-4390-9116-5c960f8ba5b5",
+      "name": "Dumbbell Lunge",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "43e24a4f-663b-4198-a32e-9b8cf643011a",
+      "name": "Dumbbell Front Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "3f06f4fd-6d6f-4f44-af16-05f086b9d414",
+      "name": "Devil Press",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "baed59c8-a483-4ca2-8bf2-5495b98dcc41",
+      "name": "Dumbbell Box Step-up",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f89d3533-d408-4efb-8ec9-eb93d28011dd",
+      "name": "Kettlebell Swing",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "0de664f5-e336-4407-a28e-73b3f90f9000",
+      "name": "Kettlebell Goblet Squat",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "c8091a1f-386d-47de-a108-a2e7ebb841d9",
+      "name": "Kettlebell Snatch",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "306ed555-d7a3-40ae-ae73-ea3c3b526d40",
+      "name": "Kettlebell Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "a97f1900-8dab-4e99-81bc-d069ec0222b2",
+      "name": "Kettlebell Clean and Jerk",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "ae5f90d2-da21-4ac3-8a6a-de5abfb4d8b5",
+      "name": "Turkish Get-up",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "dee601d4-d430-4c21-bf08-c68c69dbbd8b",
+      "name": "Kettlebell Deadlift",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "da7198ea-f5bf-47eb-9da5-3f883fe72b89",
+      "name": "Wall Ball",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "4ab06ac5-4aa9-4715-a0b1-38fd1c4f8390",
+      "name": "Medicine Ball Clean",
+      "type": "strength",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "8ec2bd33-1bab-4153-9aa0-7a21481ad9d5",
+      "name": "Pull-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "97a51bd6-acc5-4205-9607-1fe3130cdff9",
+      "name": "Chest-to-Bar Pull-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "9df8cd61-c171-4868-8568-58ad0ef3edb9",
+      "name": "Strict Pull-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "02b084e4-16d7-4a84-b918-f8946c2bcf5f",
+      "name": "Chin-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "07b95dd8-d726-444e-8f48-cf0b08f79153",
+      "name": "Bar Muscle-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "57e7499d-349e-4dd7-9f46-80a1aa1fd259",
+      "name": "Ring Muscle-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "be9d13b9-5c55-494d-a3cb-112d818ef257",
+      "name": "Handstand Push-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "9380c5e6-7b4d-40a1-be96-3fbe59289509",
+      "name": "Strict Handstand Push-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "d1285e80-c695-4fa5-b122-e792f74b14a0",
+      "name": "Toes-to-Bar",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f878f879-d537-46f5-9b68-31adbbca9b4b",
+      "name": "Knees-to-Elbow",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "ac5a7887-62af-4401-ba3c-565f045bc97e",
+      "name": "Burpee",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "8c01d88f-6239-4e4c-895c-369bdc14f9cc",
+      "name": "Burpee Box Jump-over",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "86b7de2b-0e7d-4cb5-a84e-0ee8769672bd",
+      "name": "Box Jump",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "7d66103f-c480-4606-a5fc-fac8666c4c45",
+      "name": "Box Jump-over",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f184ae26-96b6-4eb6-b0ba-989cdc18b0d2",
+      "name": "Double Under",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "424d5cc7-205a-4d15-b050-f6ce6536d2d9",
+      "name": "Pistol",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "3676f512-13e5-47ea-8336-1ee8eb3e6e10",
+      "name": "Push-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "bc014f31-573e-4a5f-a405-47b4cc0929c9",
+      "name": "Ring Dip",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "48ff5eba-a54c-48fd-a73d-a21733e9739e",
+      "name": "Air Squat",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "b3e56273-60cd-48b9-8805-ef555ffc17e0",
+      "name": "GHD Sit-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "abdf5b04-04ba-4c0f-b768-cdcb76f3fd28",
+      "name": "Sit-up",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "5d256543-6227-470b-98f1-5190c2c5b501",
+      "name": "Wall Walk",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "f273765b-2669-47f8-bf5d-4b3de697c3a7",
+      "name": "Rope Climb",
+      "type": "gymnastics",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "3aa79057-61f8-49fb-ac68-a51159d078c8",
+      "name": "Row",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "800f2b60-37e6-4b41-84e6-4d7bb38261ff",
+      "name": "Run",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "dec24f45-bbc0-442f-97f7-b0068224ed4d",
+      "name": "Echo Bike",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "03005ec3-4534-480f-a5e7-15fe19dc88cb",
+      "name": "Assault Bike",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "0b3e976e-80d6-476e-93fe-93c20968b47f",
+      "name": "BikeErg",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "c6468848-e483-4956-b047-edb0cefc1858",
+      "name": "SkiErg",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "667b4df1-aedf-4a12-8b38-66368fd8a736",
+      "name": "Swim",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "8e339518-f646-4d2f-8481-de2fe668fba5",
+      "name": "Shuttle Run",
+      "type": "cardio",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "13009b42-b383-4883-9e91-94fbe48e1112",
+      "name": "Farmers Carry",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "d0ad4eb3-6323-4e7e-98d7-2aa5212dbb98",
+      "name": "Sled Push",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "6ca9ebc6-e394-4533-a17d-5dd3b361ac38",
+      "name": "Sled Pull",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "400e5666-2a5f-4ca9-9596-a71a9c0462fb",
+      "name": "Yoke Carry",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "0b02c015-e4a1-42f6-aff4-87a1b75a8a45",
+      "name": "Sandbag Carry",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "ea15812a-84a3-4a26-aa7a-add3894e5e0f",
+      "name": "Overhead Carry",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "00ec85b2-5eba-4b41-95a6-44cd4effa48c",
+      "name": "Front Rack Carry",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    },
+    {
+      "id": "be2e4452-bc69-475a-99ac-4a9d0f124715",
+      "name": "Suitcase Carry",
+      "type": "carry",
+      "createdAt": "2026-06-16T14:20:24.720Z",
+      "entries": []
+    }
+  ],
+  "plates": [
+    { "id": "p25", "weight": 25, "color": "#8e1f1a", "droppable": true },
+    { "id": "p20", "weight": 20, "color": "#2f7ad6", "droppable": true },
+    { "id": "p15", "weight": 15, "color": "#e6b800", "droppable": true },
+    { "id": "p10", "weight": 10, "color": "#2e9e5b", "droppable": true },
+    { "id": "p5", "weight": 5, "color": "#6b7177", "droppable": false },
+    { "id": "p2_5", "weight": 2.5, "color": "#d33b34", "droppable": false },
+    { "id": "p1_5", "weight": 1.5, "color": "#f3e79b", "droppable": false }
+  ]
+}
