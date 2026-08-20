@@ -26,7 +26,7 @@ describe('Registro (ExercisesPage)', () => {
     await userEvent.type(screen.getByLabelText(/reps/i), '5');
     await userEvent.click(screen.getByRole('button', { name: /^save$/i }));
     expect(screen.getByText('Back Squat')).toBeInTheDocument();
-    expect(screen.getByText(/e1RM 117 kg/i)).toBeInTheDocument();
+    expect(screen.getByText(/e1RM 113 kg/i)).toBeInTheDocument();
   });
 
   it('saves into an existing exercise instead of duplicating (case-insensitive)', async () => {
@@ -38,7 +38,7 @@ describe('Registro (ExercisesPage)', () => {
     await userEvent.type(screen.getByLabelText(/reps/i), '3');
     await userEvent.click(screen.getByRole('button', { name: /^save$/i }));
     expect(screen.getAllByText(/^back squat$/i)).toHaveLength(1);
-    expect(screen.getByText(/e1RM 121 kg/i)).toBeInTheDocument();
+    expect(screen.getByText(/e1RM 116 kg/i)).toBeInTheDocument();
   });
 
   it('adds a record to an existing exercise from its own + button', async () => {
@@ -51,7 +51,7 @@ describe('Registro (ExercisesPage)', () => {
     await userEvent.type(screen.getByLabelText(/weight/i), '120');
     await userEvent.type(screen.getByLabelText(/reps/i), '3');
     await userEvent.click(screen.getByRole('button', { name: /save record/i }));
-    expect(screen.getByText(/e1RM 132 kg/i)).toBeInTheDocument();
+    expect(screen.getByText(/e1RM 127 kg/i)).toBeInTheDocument();
   });
 
   it('shows the search bar only after tapping the search button', async () => {

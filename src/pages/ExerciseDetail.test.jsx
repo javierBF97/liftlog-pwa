@@ -17,10 +17,10 @@ const entries = [
 const exercise = { id: 'x1', name: 'Back Squat', createdAt: '', entries };
 
 describe('ExerciseDetail v2', () => {
-  it('shows e1RM from last entry, the chart and the percent table (105 → 30)', async () => {
+  it('shows the best e1RM, the chart and the percent table (105 → 30)', async () => {
     render(<ExerciseDetail exercise={exercise} onBack={() => {}} onAddEntry={() => {}} />);
     expect(screen.getByText('Back Squat')).toBeInTheDocument();
-    expect(screen.getByText(/117 kg/)).toBeInTheDocument();
+    expect(screen.getByText(/113 kg/)).toBeInTheDocument();
     expect(await screen.findByTestId('chart')).toBeInTheDocument();
     expect(screen.getByText('105%')).toBeInTheDocument();
     expect(screen.getByText('30%')).toBeInTheDocument();

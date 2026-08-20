@@ -11,7 +11,7 @@ describe('CalculatorsPage', () => {
     await userEvent.type(screen.getByLabelText(/weight/i), '100');
     await userEvent.type(screen.getByLabelText(/reps/i), '5');
     await userEvent.click(screen.getByRole('button', { name: /calculate/i }));
-    expect(screen.getByText('116.7')).toBeInTheDocument();
+    expect(screen.getByText('112.5')).toBeInTheDocument();
   });
 
   it('switches to Plates mode and breaks down a weight', async () => {

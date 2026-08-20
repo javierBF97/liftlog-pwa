@@ -53,15 +53,23 @@ You can also self-host it on any static server (see
 
 ### 1RM estimation
 
-LiftLog estimates the one-rep max with the Epley formula:
+After reviewing the Epley and Brzycki formulas, LiftLog estimates the
+one-rep max with Brzycki:
 
 ```
-e1RM = w × (1 + r / 30)
+e1RM = w × 36 / (37 − r)
 ```
 
-The inverse form gives the weight you can lift for *n* reps:
-`w = e1RM / (1 + n / 30)`. One logged set is enough to build the full
+Brzycki returns the weight itself at one rep, so an estimate never exceeds
+a single you actually lifted; Epley overstates it there by 3.3%. The two
+agree at ten reps, and past that no formula is reliable, so the rep count
+is capped there for the estimate. The inverse form gives the weight you can
+lift for *n* reps:
+`w = e1RM × (37 − n) / 36`. One logged set is enough to build the full
 percentage table and the RM table.
+
+The log and the detail view show the **best** estimate on record, not the
+most recent one, so a light session never lowers your headline number.
 
 ### Plate calculator
 
@@ -105,7 +113,7 @@ isolation. Every module keeps its test file next to it.
 ```bash
 npm install
 npm run dev        # dev server with hot reload
-npm test           # test suite (125 tests, Vitest + Testing Library)
+npm test           # test suite (130 tests, Vitest + Testing Library)
 npm run lint       # ESLint
 npm run build      # production build in dist/
 ```

@@ -34,12 +34,19 @@ describe('derived metrics', () => {
 });
 
 describe('pillText', () => {
-  it('strength: e1RM of last entry', () => {
+  it('strength: best e1RM across entries', () => {
     const ex = { type: 'strength', entries: [
       { id: '1', date: '2026-06-01', weight: 90, reps: 5 },
       { id: '2', date: '2026-06-10', weight: 100, reps: 5 },
     ] };
-    expect(pillText(ex)).toBe('e1RM 117 kg');
+    expect(pillText(ex)).toBe('e1RM 113 kg');
+  });
+  it('strength: a lighter last session does not lower the e1RM', () => {
+    const ex = { type: 'strength', entries: [
+      { id: '1', date: '2026-06-01', weight: 100, reps: 5 },
+      { id: '2', date: '2026-06-20', weight: 60, reps: 3 },
+    ] };
+    expect(pillText(ex)).toBe('e1RM 113 kg');
   });
   it('carry: max weight', () => {
     const ex = { type: 'carry', entries: [
@@ -68,9 +75,9 @@ describe('pillText', () => {
 });
 
 describe('metricGrande', () => {
-  it('strength → estimated 1RM of the latest entry', () => {
+  it('strength → best estimated 1RM on record', () => {
     expect(metricGrande({ type: 'strength', entries: [{ date: '2026-06-10', weight: 100, reps: 5 }] }))
-      .toEqual({ label: 'Estimated 1RM', value: '117 kg' });
+      .toEqual({ label: 'Estimated 1RM', value: '113 kg' });
   });
   it('carry → max weight', () => {
     expect(metricGrande({ type: 'carry', entries: [

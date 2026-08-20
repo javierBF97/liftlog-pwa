@@ -36,7 +36,9 @@ export function powerCalMin(calories, timeS) {
   return calories / (timeS / 60);
 }
 
-const lastByDate = (entries) => [...entries].sort((a, b) => a.date.localeCompare(b.date)).at(-1);
+// Best estimate on record, so a light session never lowers the headline
+// number — the same "personal best" reading the other types show.
+const bestE1RM = (entries) => Math.max(...entries.map((e) => estimate1RM(e.weight, e.reps)));
 
 export function pillText(exercise) {
   const { type = 'strength', entries } = exercise;
@@ -56,8 +58,7 @@ export function pillText(exercise) {
     if (powers.length) return `${t('pill.best')} ${Math.round(Math.max(...powers))} cal/min`;
     return null;
   }
-  const last = lastByDate(entries);
-  return `e1RM ${Math.round(estimate1RM(last.weight, last.reps))} kg`;
+  return `e1RM ${Math.round(bestE1RM(entries))} kg`;
 }
 
 export function metricGrande(exercise) {
@@ -78,8 +79,7 @@ export function metricGrande(exercise) {
     if (powers.length) return { label: t('metric.bestPower'), value: `${Math.round(Math.max(...powers))} cal/min` };
     return null;
   }
-  const last = lastByDate(entries);
-  return { label: t('metric.e1rm'), value: `${Math.round(estimate1RM(last.weight, last.reps))} kg` };
+  return { label: t('metric.e1rm'), value: `${Math.round(bestE1RM(entries))} kg` };
 }
 
 export function chartMetrics(type) {

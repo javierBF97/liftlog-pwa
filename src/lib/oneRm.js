@@ -1,11 +1,18 @@
-// Epley formula: 1RM = weight * (1 + reps / 30)
+// Brzycki formula: 1RM = weight * 36 / (37 - reps). Unlike Epley it returns
+// the weight itself at one rep, so an estimate never exceeds a lifted single.
+// It also breaks down as reps approach 37, hence the cap: past 10 reps no
+// formula is reliable, and 10 is where Brzycki and Epley agree.
+const MAX_MODELLED_REPS = 10;
+
+const modelled = (reps) => Math.min(reps, MAX_MODELLED_REPS);
+
 export function estimate1RM(weight, reps) {
-  return weight * (1 + reps / 30);
+  return (weight * 36) / (37 - modelled(reps));
 }
 
-// Inverse Epley: weight liftable for n reps given a 1RM
+// Inverse Brzycki: weight liftable for n reps given a 1RM
 export function weightForRM(oneRm, n) {
-  return oneRm / (1 + n / 30);
+  return (oneRm * (37 - modelled(n))) / 36;
 }
 
 // % table from 105% down to 30% in 5% steps (16 rows)
