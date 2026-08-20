@@ -23,10 +23,11 @@ The app is live at
 1. Open the URL on your phone.
 2. Install it. Android (Chrome): ⋮ menu → *Add to Home screen*. iPhone
    (Safari): share button → *Add to Home Screen*.
-3. Optional: import [`crossfit-base.json`](crossfit-base.json) from
-   **Log → ⚙ Settings → Import backup**. It loads ~113 CrossFit exercises,
-   classified by type. Import [`mock-data.json`](mock-data.json) instead to
-   see the app with ~3 months of sample history.
+3. Search for a lift and log your first set. The app ships with ~113
+   CrossFit exercises already classified by type, so there is nothing to
+   import. To see it with data instead, import
+   [`mock-data.json`](mock-data.json) from **Log → ⚙ Settings → Import
+   backup** (~3 months of sample history).
 
 You can also self-host it on any static server (see
 [Development](#development)).
@@ -44,6 +45,9 @@ You can also self-host it on any static server (see
 - **Bilingual UI** (English/Spanish). It follows the system language, and
   you can switch anytime.
 - **Backup**: export and import all your data as one JSON file.
+- **Starter library**: [`crossfit-base.json`](crossfit-base.json) ships with
+  the app and seeds a new device on first run. The log lists only exercises
+  you have logged; search reveals the whole library.
 
 ## How it works
 
@@ -72,8 +76,11 @@ loadable weight, marked as such.
 
 ### Data and persistence
 
-All state is one versioned JSON document in `localStorage`. The volume is
-small: a year of training is a few hundred entries, well under 100 KB.
+All state is one versioned JSON document in `localStorage`. On first run,
+when the key is absent, the app seeds it with the bundled exercise library;
+an empty stored state means you deleted everything, so it is never reseeded.
+The volume is small: a year of training is a few hundred entries, well under
+100 KB.
 Every import passes through `sanitizeState`, which validates each entry and
 drops malformed ones instead of failing. At startup the app requests
 persistent storage, so the browser does not evict the data under disk
@@ -98,7 +105,7 @@ isolation. Every module keeps its test file next to it.
 ```bash
 npm install
 npm run dev        # dev server with hot reload
-npm test           # test suite (122 tests, Vitest + Testing Library)
+npm test           # test suite (125 tests, Vitest + Testing Library)
 npm run lint       # ESLint
 npm run build      # production build in dist/
 ```

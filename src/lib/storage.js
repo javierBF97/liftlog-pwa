@@ -1,4 +1,5 @@
 import { DEFAULT_PLATES } from './plates';
+import baseLibrary from '../../crossfit-base.json';
 
 export const STORAGE_KEY = 'liftlog-v1';
 export const BAR_KEY = 'liftlog-bar-kg';
@@ -32,9 +33,20 @@ export function emptyState() {
   return { version: 1, exercises: [], plates: DEFAULT_PLATES };
 }
 
+// State for a device that has never stored anything: the bundled exercise
+// library, so the app is usable without importing a backup first.
+export function initialState() {
+  try {
+    return sanitizeState(baseLibrary);
+  } catch {
+    return emptyState();
+  }
+}
+
 export function loadState() {
   const raw = localStorage.getItem(STORAGE_KEY);
-  if (!raw) return emptyState();
+  // Absent key means first run; an empty stored state is a deliberate wipe.
+  if (!raw) return initialState();
   try {
     const parsed = JSON.parse(raw);
     if (!parsed || !Array.isArray(parsed.exercises)) return emptyState();

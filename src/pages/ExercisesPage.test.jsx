@@ -149,6 +149,7 @@ describe('Registro (ExercisesPage)', () => {
   });
 
   it('does not show the empty-list hint when there are no exercises at all', () => {
+    seed([]);
     render(<ExercisesPage />);
     expect(screen.queryByText(/no records yet/i)).not.toBeInTheDocument();
   });

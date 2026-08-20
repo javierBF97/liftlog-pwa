@@ -10,11 +10,30 @@ import {
 beforeEach(() => localStorage.clear());
 
 describe('loadState / saveState', () => {
-  it('returns empty state when nothing stored', () => {
+  it('seeds the base exercise library on first run', () => {
     const s = loadState();
     expect(s.version).toBe(1);
-    expect(s.exercises).toEqual([]);
     expect(s.plates).toHaveLength(7);
+    expect(s.exercises.length).toBeGreaterThan(100);
+    expect(s.exercises.every((ex) => ex.entries.length === 0)).toBe(true);
+    expect(s.exercises.map((ex) => ex.name)).toContain('Back Squat');
+  });
+  it('gives every seeded exercise a name, an id and a known type', () => {
+    const types = ['strength', 'carry', 'gymnastics', 'cardio'];
+    for (const ex of loadState().exercises) {
+      expect(ex.id).toBeTruthy();
+      expect(ex.name).toBeTruthy();
+      expect(types).toContain(ex.type);
+    }
+  });
+  it('does not seed over stored data', () => {
+    const stored = addExercise(emptyState(), 'Squat');
+    saveState(stored);
+    expect(loadState().exercises).toHaveLength(1);
+  });
+  it('does not re-seed after the user deletes every exercise', () => {
+    saveState(emptyState());
+    expect(loadState().exercises).toEqual([]);
   });
   it('round-trips state through localStorage', () => {
     const s = addExercise(emptyState(), 'Squat');
